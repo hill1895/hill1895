@@ -1,0 +1,6 @@
+<uwsgi>
+<master>true</master>
+ <socket>127.0.0.1:9090</socket>
+ <pythonpath>..</pythonpath>
+ <module>mysite.wsgi</module>
+</uwsgi>

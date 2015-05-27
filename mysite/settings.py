@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'DjangoUeditor',
-    'hill1895'
+    'hill1895',
 )
 
 MIDDLEWARE_CLASSES = (

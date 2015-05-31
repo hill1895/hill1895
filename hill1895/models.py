@@ -19,10 +19,11 @@ class Tag(models.Model):
 				
 
 class Blog(models.Model):
-	title=models.CharField(max_length=100)
-	head_pic_url=models.CharField(max_length=250,null=True,blank=True)
+	title=models.CharField(u'Title',max_length=100)
+	head_pic_url=models.CharField(u'Head_pic_url',max_length=250,null=True,blank=True)
 	pub_time=models.DateTimeField(auto_now=True)
 	content=UEditorField(u'content',width=900,height=600,toolbars="full",imagePath="",settings={})
+	page_views=models.PositiveIntegerField(u'page_views',default=0,editable=False)
 	category1=models.ForeignKey(Category1)
 	category2=models.ForeignKey(Category2,null=True)
 	tags=models.ManyToManyField(Tag,blank=True)

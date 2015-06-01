@@ -19,14 +19,14 @@ class Tag(models.Model):
 				
 
 class Blog(models.Model):
-	title=models.CharField(u'Title',max_length=100)
-	head_pic_url=models.CharField(u'Head_pic_url',max_length=250,null=True,blank=True)
+	title=models.CharField(u'标题',max_length=100)
+	head_pic_url=models.CharField(u'头图链接',max_length=250,null=True,blank=True)
 	pub_time=models.DateTimeField(auto_now=True)
-	content=UEditorField(u'content',width=900,height=600,toolbars="full",imagePath="",settings={})
-	page_views=models.PositiveIntegerField(u'page_views',default=0,editable=False)
-	category1=models.ForeignKey(Category1)
-	category2=models.ForeignKey(Category2,null=True)
-	tags=models.ManyToManyField(Tag,blank=True)
+	content=UEditorField(u'正文',width=900,height=600,toolbars="full",imagePath="",settings={})
+	page_views=models.PositiveIntegerField(u'阅读量',default=0,editable=False)
+	category1=models.ForeignKey(u'一级目录',Category1)
+	category2=models.ForeignKey(u'二级目录',Category2,null=True)
+	tags=models.ManyToManyField(u'标签',Tag,blank=True)
 	def __unicode__(self):
 		return self.title
 

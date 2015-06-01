@@ -4,8 +4,64 @@ body{
 	"Helvetica Neue",
 	Arial,
     Sans-serif;
+    word-break:break-all;
+    color: #bbbbbb;
+    text-align: left;
 
 }
+
+a{
+	text-decoration: none;
+}
+
+a:link{
+	color: #bbbbbb;
+	text-decoration: none;
+}
+
+a:visited{
+	color: #dddddd;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #dddddd;
+	text-decoration: none;
+}
+
+a:active{
+	color: #dddddd;
+	text-decoration: none;
+}
+
+
+
 p{
-	font-size: 20px;
+	font-size: 14px;
+}
+
+#topnavibar{
+	filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+
+}
+
+#logo{
+	margin-top: 5px;
+	margin-left: 20px;
+
+}
+
+.dropdown-menu{
+	background-color: #222222;
+}
+
+.dropdown-menu li a{
+	color: #cccccc;
+}
+
+.navbar-right{
+	margin-right: 30px;
 }

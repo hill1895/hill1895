@@ -1,67 +1,126 @@
-body{background-color: #666666;}
+body{background-color: #444444;
+	 }
 
 
-a{
-	color: #ffffff;
-}
 
 #main{
 	width: 900px;
 	background-color: #333333;
 }
-#navigator{
-	margin-top: -40px;
+
+
+#navibar{
+	margin-top: -50px;
+
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
 }
 
 
 
 .header{
 	width: 900px;
-	height: 300px;
+	height: 450px;
 }
 
-.nav-tabs {
-  border-bottom: 1px solid #222;
-}
 
-.nav > li > a:hover,
-.nav > li > a:focus {
-  text-decoration: none;
-  background-color: #333;
-  color: #fff
-}
-
-.nav .open > a,
-.nav .open > a:hover,
-.nav .open > a:focus {
-  background-color: #333;
-}
-
-.nav-tabs > li > a:hover {
-  border-color: #222 #222 #222;
-  background-color: #333;
-  color: #ffffff
-}
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  color: #fff;
-  cursor: default;
-  background-color: #333;
-  border-color: #222 #222 #222;
-
-
-}
 
 #timeline{
-	width: 600px;
-	text-align: left;
-	height: 600px;
+	width: 640px;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.blog_list{
+	width: 640px;
+	height:160px;
 	background-color: #333333;
-	border-color: #222 #222 #222 #222;
-		filter:alpha(opacity=50);
-	-moz-opacity:0.5;
-	-khtml-opacity: 0.5;
-	opacity: 0.5;
+	margin-bottom: 10px;
+}
+
+.blog_img{
+	float: right;
+	width: 200px;
+	height: 120px;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.blog_pic{
+	position: relative;
+	width: 100%;
+	vertical-align: middle;
+
+}
+
+.blog_title{
+	float: left;
+	background-color: #333333;
+	width: 400px;
+	margin-left: 20px;
+	margin-top: 25px;
+
+}
+
+.blog_title h3{
+	text-align: left;
+}
+
+.blog_title p{
+	color: #666666;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 20px;
+
+}
+
+
+#right_column{
+	width: 250px;
+	float: right;
+}
+
+#latest{
+	width: 100%;
+	background-color: #333333;
+	padding: 5px 15px 5px 5px;
+}
+#latest h5{
+	text-align: left;
+	font-size: 16px;
+	vertical-align: middle;
+	margin-left: 5px;
+
+}
+
+#latest ol li{
+	font-size: 14px;
+	text-align: left;
+
+}
+
+#tags{
+	width: 100%;
+	background-color: #333333;
+	padding: 5px 15px 5px 5px;
+	margin-top: 15px;
+}
+
+#tags h5{
+	text-align: left;
+	font-size: 16px;
+	vertical-align: middle;
+	margin-left: 5px;
+
+}
+
+#tags p{
+	margin-left: 10px;
+	font-size: 14px;
+	text-align: left;
+
+
 }

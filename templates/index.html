@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}hill1895{% endblock %}
+
+{% block navibar %}
+	<nav class="navbar navbar-inverse" role="navigation" id="navibar">
+   <div>
+      <ul class="nav navbar-nav">
+         <li class="active"><a href="/">首页</a></li>
+         <li><a href="#">技术博客</a></li>
+         <li><a href="#">生活</a></li>
+         <li><a href="#">瞎扯</a></li>
+      </ul>
+   </div>
+</nav>
+{% endblock %}
+
+ {% block title_list %}
+ {% for blog in blogs %}
+		<a href="#">
+		<div class="blog_list">
+			<div class="blog_title">
+				<h3>
+					{{ blog.title }}
+				</h3>
+				<p>发表时间: {{ blog.pub_time }}&nbsp&nbsp阅读量: {{ blog.page_views }}&nbsp&nbsp阅读全文</p>
+			</div>
+			
+			<div class="blog_img">
+				<img src="{{ blog.head_pic_url }}" class="blog_pic">
+			</div>
+		</div>
+		</a>
+{% endfor %}
+{% endblock %}
+
+{% block lastest_blog%}
+	{% for blog in blogs %}
+	<li><a href="#">{{ blog.title }}</a></li>
+	{% endfor %}
+{% endblock %}
+
+{% block tags %}
+   <p>
+   	{% for tag in tags %}
+   	{{ tag.tag }},&nbsp&nbsp
+   	{% endfor %}
+   </p>
+{% endblock %}

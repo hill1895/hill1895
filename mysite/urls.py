@@ -1,3 +1,6 @@
+#-*- coding: UTF-8 -*-
+#coding=UTF-8
+
 """mysite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -13,10 +16,13 @@ Including another URLconf
     1. Add an import:  from blog import urls as blog_urls
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
-from django.conf.urls import include, url
+from django.conf.urls import include, url, patterns
 from django.contrib import admin
+from hill1895 import views
 
-urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^ueditor/',include('DjangoUeditor.urls')),
-]
+
+urlpatterns=patterns('hill1895.views',
+	url(r'^admin/', include(admin.site.urls)),
+	url(r'^ueditor/',include('DjangoUeditor.urls')),
+	url(r'^$','index'),
+	)

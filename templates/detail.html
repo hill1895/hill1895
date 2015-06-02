@@ -7,7 +7,7 @@
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="topnavibar">
    <div class="navbar-header">
-      <a href="#"><img src="../hill1895/static/img/logo.png" id="logo"></a>
+      <a href="#"><img src="/static/img/logo.png" id="logo"></a>
    </div>
    <div>
       <ul class="nav navbar-nav navbar-right">
@@ -30,7 +30,7 @@
 <center>
 <div id="main">
    <div id="head_pic">
-      <img src="../hill1895/static/img/test.jpg" class="header">
+      <img src="{{ blog.head_pic_url }}" class="header">
       <br/>
       <nav class="navbar navbar-inverse" role="navigation" id="navibar">
       <div>
@@ -46,18 +46,18 @@
 
 
    <div id="content">
-      <h2>这是一个破标题</h2>
-      <p>这是正文</p>
+      <h2>{{ blog.title }}</h2>
+      {{ blog.content|safe }}
       
    </div>
 	
 </div>
 </center>
 
-	<link rel="stylesheet" type="text/css" href="../hill1895/static/css/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../hill1895/static/css/style.css">
-   <link rel="stylesheet" type="text/css" href="..//hill1895/static/css/detail.css">
-	<script src="../hill1895/static/js/jquery-1.11.3.min.js"></script>
-	<script src="../hill1895/static/js/bootstrap/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+   <link rel="stylesheet" type="text/css" href="/static/css/detail.css">
+	<script src="/static/js/jquery-1.11.3.min.js"></script>
+	<script src="/static/js/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>

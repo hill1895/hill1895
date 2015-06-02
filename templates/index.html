@@ -17,7 +17,7 @@
 
  {% block title_list %}
  {% for blog in blogs %}
-		<a href="#">
+		<a href="{% url 'blog_detail' blog.id %}">
 		<div class="blog_list">
 			<div class="blog_title">
 				<h3>

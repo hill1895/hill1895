@@ -14,7 +14,6 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE_ROOT = os.path.dirname(os.path.dirname(__file__))
 
 TEMPLATES_DIRS=(
     os.path.join(BASE_DIR,'templates').replace('\\','/'),
@@ -116,5 +115,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATIC_ROOT=os.path.join(BASE_DIR,'static')
+#STATIC_ROOT=os.path.join(os.path.dirname(SITE_ROOT),'static').replace('\\','/')
 STATIC_URL = '/static/'
+STATICFILES_DIRS=(
+    os.path.join(BASE_DIR,'static').replace('\\','/'),
+    )
+
+

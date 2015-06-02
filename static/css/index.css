@@ -57,11 +57,13 @@ body{background-color: #444444;
 }
 
 .blog_title{
+	position: absolute;
 	float: left;
 	background-color: #333333;
 	width: 400px;
 	margin-left: 20px;
 	margin-top: 25px;
+	height: 125px;
 
 }
 
@@ -70,10 +72,11 @@ body{background-color: #444444;
 }
 
 .blog_title p{
+	position:absolute;
+	bottom: 0px;
+	right: 20px;
 	color: #666666;
 	text-align: right;
-	margin-right: 20px;
-	margin-top: 20px;
 
 }
 
@@ -90,14 +93,14 @@ body{background-color: #444444;
 }
 #latest h5{
 	text-align: left;
-	font-size: 16px;
+	font-size: 1em;
 	vertical-align: middle;
 	margin-left: 5px;
 
 }
 
 #latest ol li{
-	font-size: 14px;
+	font-size: 0.875em;
 	text-align: left;
 
 }
@@ -111,7 +114,7 @@ body{background-color: #444444;
 
 #tags h5{
 	text-align: left;
-	font-size: 16px;
+	font-size: 1em;
 	vertical-align: middle;
 	margin-left: 5px;
 
@@ -119,7 +122,7 @@ body{background-color: #444444;
 
 #tags p{
 	margin-left: 10px;
-	font-size: 14px;
+	font-size: 0.875em;
 	text-align: left;
 
 

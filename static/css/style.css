@@ -5,8 +5,14 @@ body{
 	Arial,
     Sans-serif;
     word-break:break-all;
+    font-size: 14px;
     color: #bbbbbb;
     text-align: left;
+}
+
+h1 {font-size:2.5em;}
+h2 {font-size:1.875em;}
+p {font-size:0.875em;}
 
 }
 

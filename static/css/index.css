@@ -3,6 +3,7 @@ body{background-color: #444444;
 
 
 
+
 #main{
 	width: 900px;
 	background-color: #333333;
@@ -42,17 +43,17 @@ body{background-color: #444444;
 
 .blog_img{
 	float: right;
-	width: 200px;
-	height: 100px;
+	width: 180px;
+	height: 120px;
 	overflow: hidden;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-right: 20px;
+	vertical-align: middle;
 }
 
-.blog_pic{
-	position: relative;
+.blog_img img{
 	width: 100%;
-	vertical-align: middle;
+	vertical-align:middle;
 
 }
 
@@ -93,14 +94,14 @@ body{background-color: #444444;
 }
 #latest h5{
 	text-align: left;
-	font-size: 1em;
+	font-size: 1.25em;
 	vertical-align: middle;
 	margin-left: 5px;
 
 }
 
 #latest ol li{
-	font-size: 0.875em;
+	font-size: 1em;
 	text-align: left;
 
 }
@@ -114,16 +115,14 @@ body{background-color: #444444;
 
 #tags h5{
 	text-align: left;
-	font-size: 1em;
+	font-size: 1.25em;
 	vertical-align: middle;
 	margin-left: 5px;
 
 }
 
-#tags p{
-	margin-left: 10px;
-	font-size: 0.875em;
-	text-align: left;
-
+#tags h5 span{
+	font-weight: normal;
+	margin-top: 5px;
 
 }

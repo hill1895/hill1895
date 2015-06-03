@@ -2,7 +2,7 @@ from django.contrib import admin
 from hill1895.models import Blog,Category1,Category2,Tag
 
 class BlogAdmin(admin.ModelAdmin):
-	list_display=('title','pub_time','category1','category2')
+	list_display=('title','pub_time','category1','category2','page_views')
 	serch_field=('category1','category2')
 	list_filter=('category1','category2')
 

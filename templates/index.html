@@ -2,6 +2,8 @@
 
 {% block title %}hill1895{% endblock %}
 
+{% load hill1895_extras %}
+
 {% block navibar %}
 	<nav class="navbar navbar-inverse" role="navigation" id="navibar">
    <div>
@@ -16,34 +18,37 @@
 {% endblock %}
 
  {% block title_list %}
- {% for blog in blogs %}
-		<a href="{% url 'blog_detail' blog.id %}">
+ {% for blog_info in blog_infos %}
+		
 		<div class="blog_list">
+			<a href="{% url 'blog_detail' blog_info|get_value:'id' %}" target=_blank>
 			<div class="blog_title">
 				<h3>
-					{{ blog.title }}
+					{{ blog_info|get_value:"title" }}
 				</h3>
-				<p>发表时间: {{ blog.pub_time }}&nbsp&nbsp阅读量: {{ blog.page_views }}&nbsp&nbsp阅读全文</p>
+				<p>发表时间: {{ blog_info|get_value:"pub_time"|date:"Y-m-d H:i:s" }}&nbsp&nbsp阅读量: {{ blog_info|get_value:"page_views" }}&nbsp&nbsp</p>
 			</div>
-			
+			</a>
 			<div class="blog_img">
-				<img src="{{ blog.head_pic_url }}" class="blog_pic">
+				<p><img src="{{ blog_info|get_value:'head_pic_url' }}" /></p>
 			</div>
 		</div>
-		</a>
+		
 {% endfor %}
 {% endblock %}
 
+
 {% block lastest_blog%}
-	{% for blog in blogs %}
-	<li><a href="#">{{ blog.title }}</a></li>
+	{% for blog in latest %}
+	<li><a href="{% url 'blog_detail' blog|get_value:1 %} " target=_blank>{{ blog|get_value:0 }}</a></li>
 	{% endfor %}
 {% endblock %}
 
-{% block tags %}
-   <p>
-   	{% for tag in tags %}
-   	{{ tag.tag }},&nbsp&nbsp
+{% block tags %} 
+   	<h5>
+   		{% for tag in tags %}
+   	<span class="label label-default">{{ tag.tag }}</span>&nbsp&nbsp
    	{% endfor %}
-   </p>
+   </h5>
 {% endblock %}
+

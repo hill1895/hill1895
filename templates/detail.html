@@ -3,34 +3,21 @@
 <head>
 	<meta http-equiv="content-Type" content="text/html;charset=utf8"/>
 	<title></title>
+
+   <link rel="stylesheet" type="text/css" href="/static/css/bootstrap/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+   <link rel="stylesheet" type="text/css" href="/static/css/detail.css">
+   <link rel="stylesheet" type="text/css" href="/static/css/ueditor/shCoreDefault.css">
+
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="topnavibar">
-   <div class="navbar-header">
-      <a href="#"><img src="/static/img/logo.png" id="logo"></a>
-   </div>
-   <div>
-      <ul class="nav navbar-nav navbar-right">
-         <li><a href="#">首页</a></li>
-          <li class="dropdown-inverse">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">博客<b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-               <li><a href="#">技术博客</a></li>
-               <li><a href="#">生活</a></li>
-               <li><a href="#">瞎扯</a></li>
-            </ul>
-         </li>
-         <li><a href="#">友情链接</a></li>
-         <li><a href="#">Profile</a></li>
-         <li><a href="/admin">管理</a></li>
-   </div>
-</nav>
+
+{% include "header.html" %}
 
 <center>
 <div id="main">
    <div id="head_pic">
-      <img src="{{ blog.head_pic_url }}" class="header">
+      <img src="{{ blog.head_pic_url }}">
       <br/>
       <nav class="navbar navbar-inverse" role="navigation" id="navibar">
       <div>
@@ -47,6 +34,13 @@
 
    <div id="content">
       <h2>{{ blog.title }}</h2>
+      <h5 class="blog_info">发表时间: {{ blog.pub_time|date:"Y-m-d H:i:s"}}&nbsp&nbsp阅读量: {{ blog.page_views }}</h5>
+      <h5 class="tag">标签:&nbsp&nbsp
+      {% for tag in blog_tags %}
+       <span class="label label-default">{{ tag }}</span>
+          &nbsp&nbsp
+          {% endfor %}</h5>
+      <br/>
       {{ blog.content|safe }}
       
    </div>
@@ -54,10 +48,12 @@
 </div>
 </center>
 
-	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
-   <link rel="stylesheet" type="text/css" href="/static/css/detail.css">
+
 	<script src="/static/js/jquery-1.11.3.min.js"></script>
 	<script src="/static/js/bootstrap/bootstrap.min.js"></script>
+   <script src="/static/js/ueditor/shCore.js"></script>
+   <script type="text/javascript">      
+      SyntaxHighlighter.all();       
+   </script>
 </body>
 </html>

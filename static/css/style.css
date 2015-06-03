@@ -12,9 +12,7 @@ body{
 
 h1 {font-size:2.5em;}
 h2 {font-size:1.875em;}
-p {font-size:0.875em;}
-
-}
+p {font-size:1em;}
 
 a{
 	text-decoration: none;
@@ -31,20 +29,19 @@ a:visited{
 }
 
 a:hover{
-	color: #dddddd;
+	color: #ffffff;
 	text-decoration: none;
 }
 
 a:active{
-	color: #dddddd;
+	color: #ffffff;
 	text-decoration: none;
 }
 
 
 
-p{
-	font-size: 14px;
-}
+
+
 
 #topnavibar{
 	filter:alpha(opacity=90);

@@ -1,10 +1,9 @@
 body{background-color: #444444;
+
 	 }
-.header{
-	width: 100%;
-	position: relative;
-	vertical-align: middle;
-}
+
+
+
 
 #main{
 	width: 800px;
@@ -13,23 +12,82 @@ body{background-color: #444444;
 	width: 800px;
 	height: 400px;
 	overflow: hidden;
+	text-align: center;
+}
+
+
+#head_pic img{
+	vertical-align: middle;
+	width: 100%;
 
 }
 #navibar{
 	position: absolute;
 	top:350px;
 	width: 800px;
-	filter:alpha(opacity=70);
-	-moz-opacity:0.7;
-	-khtml-opacity: 0.7;
-	opacity: 0.7;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
 }
 
 #content{
 	width: 100%;
 	background-color: #333333;
-	padding: 10px 20px 10px 20px;
-}
-#content h2,p {
+	padding: 10px 30px 10px 30px;
 	text-align: left;
+	margin-bottom: 30px;
+	font-size: 16px;
 }
+
+
+#content h2{
+	color: #eeeeee;
+}
+
+
+#content a{
+	text-decoration: underline;
+}
+
+#content a:link{
+	color: #bbbbbb;
+	text-decoration: underline;
+}
+
+#content a:visited{
+	color: #dddddd;
+	text-decoration: underline;
+}
+
+#content a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+#content a:active{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+
+#content p{
+	font-size: 1em;
+}
+
+.blog_info{
+	font-size: 0.875em;
+	color: #666666;
+}
+
+.tag{
+	color: #666666;
+}
+.tag span{
+	font-weight: normal;
+}
+
+
+#content blockquote{
+	border-left: 5px solid #444444; 
+	font-size: 1em;

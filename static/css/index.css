@@ -1,5 +1,3 @@
-body{background-color: #444444;
-	 }
 
 
 
@@ -53,7 +51,7 @@ body{background-color: #444444;
 	overflow: hidden;
 	margin-top: 20px;
 	margin-right: 20px;
-	vertical-align: middle;
+	text-align:center;
 }
 
 .blog_img img{
@@ -85,9 +83,7 @@ body{background-color: #444444;
 	text-align: right;
 
 }
-#pages{
-	text-align: left;
-}
+
 
 .pagination li a{
 	background-color: #333333;
@@ -173,7 +169,22 @@ body{background-color: #444444;
   border-bottom-color: transparent;
 }
 
+.nav-tabs > li >a {
+	color: #dddddd;
+}
+
+
+.nav-tabs > li > a:visited{
+	background: transparent;
+	border: 1px solid #222;
+}
+
 .nav-tabs > li > a:hover{
 	background-color: #333;
+	border: 1px solid #222;
+}
+
+.nav-tabs > li > a:active{
+	background: transparent;
 	border: 1px solid #222;
 }

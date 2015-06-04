@@ -1,4 +1,4 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 
 {% block title %}
 
@@ -31,18 +31,17 @@
 			</div>
 			</a>
 			<div class="blog_img">
-				<p><img src="{{ blog_info|get_value:'head_pic_url' }}" /></p>
+				<img src="{{ blog_info|get_value:'head_pic_url' }}" />
 			</div>
 		</div>
 {% empty %}
 		<h3>This guy did't leave anything</h3>
 {% endfor %}
 
-{% endblock %}
 
-{% block pagenation %}
 
-<div id="pages">
+
+
 	<ul class="pagination">
 
 	{% if tag_infos.has_previous %}
@@ -62,11 +61,10 @@
 	{% if tag_infos.has_next %}
     	<li><a href="?page={{ blog_infos.next_page_number }}">&raquo;</a></li>
     {% else %}
-    	<li class="active"> <a>&raquo</a></li>
+    	<li class="active"> <a>&raquo;</a></li>
     {% endif %}
 	</ul>
 
-</div>
 
 {% endblock %}
 

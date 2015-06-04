@@ -1,0 +1,43 @@
+{% load hill1895_extras %}
+
+{% for blog_info in python_infos %}
+	
+		<div class="blog_list">
+			<a href="{% url 'blog_detail' blog_info|get_value:'id' %}" target=_blank>
+			<div class="blog_title">
+				<h3>
+					{{ blog_info|get_value:"title" }}
+				</h3>
+				<p>发表时间: {{ blog_info|get_value:"pub_time"|date:"Y-m-d H:i:s" }}&nbsp;&nbsp;阅读量: {{ blog_info|get_value:"page_views" }}&nbsp;&nbsp;</p>
+			</div>
+			</a>
+			<div class="blog_img">
+				<img src="{{ blog_info|get_value:'head_pic_url' }}" />
+			</div>
+		</div>
+{% empty %}
+		<h3>This guy did't leave anything</h3>
+{% endfor %}
+
+	<ul class="pagination">
+
+	{% if python_infos.has_previous %}
+		<li><a href="?page={{ python_infos.previous_page_number }}">&laquo;</a></li>
+	{% else %}
+		<li class="active"><a>&laquo;</a></li>
+	{% endif %}
+
+	{% for p in python_page_range %}
+      {% ifequal p python_infos.number %}
+     	 <li class="active"><a>{{p}}</a></li>
+      {% else %}
+      	<li><a href="?page={{p}}" title="第{{p}}页">{{p}}</a><li>
+      {% endifequal %}
+    {% endfor %}
+
+	{% if python_infos.has_next %}
+    	<li><a href="?page={{ python_infos.next_page_number }}">&raquo;</a></li>
+    {% else %}
+    	<li class="active"> <a>&raquo;</a></li>
+    {% endif %}
+	</ul>

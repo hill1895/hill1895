@@ -4,7 +4,7 @@
 from django.shortcuts import render_to_response
 from django import template
 from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
-from hill1895.models import Blog,Tag
+from hill1895.models import Blog,Tag,Category1,Category2
 
 # Create your views here.
 
@@ -37,7 +37,7 @@ def __get_blog_info(objs):
 
 	return blog_info
 
-def __my_pagination(request,objs,display_num=10,after_range=10,before_range=9):
+def __my_pagination(request,objs,display_num=6,after_range=6,before_range=5):
 	paginator=Paginator(objs,display_num)
 
 	try:
@@ -59,6 +59,23 @@ def __my_pagination(request,objs,display_num=10,after_range=10,before_range=9):
 	
 	return objects,page_range
 
+def __get_blog_list(request,obj_list):
+	obj_latest=__get_latest(obj_list)
+	obj_infos_all=__get_blog_info(obj_list)
+	obj_infos,obj_page_range=__my_pagination(request,obj_infos_all)
+
+	return obj_latest,obj_infos,obj_page_range
+
+
+def __blog_by_category2(request,objs,category):
+	obj_category=Category2.objects.get(category_2=category)
+	obj_list=objs.filter(category2=obj_category)
+	obj_infos_all=__get_blog_info(obj_list)
+	obj_infos,obj_page_range=__my_pagination(request,obj_infos_all)
+
+	return obj_infos,obj_page_range
+
+
 
 
 ###the views of the page
@@ -67,9 +84,7 @@ def __my_pagination(request,objs,display_num=10,after_range=10,before_range=9):
 def index(request):
 	blogs=Blog.objects.all()
 	tags=Tag.objects.all()
-	latest=__get_latest(blogs)
-	blog_infos_all=__get_blog_info(blogs)
-	blog_infos,page_range=__my_pagination(request,blog_infos_all)
+	latest,blog_infos,page_range=__get_blog_list(request,blogs)
 	content={'blog_infos':blog_infos,
 			 'page_range':page_range,
 			 'tags':tags,
@@ -89,9 +104,7 @@ def tag(request,tag_id):
 	get_tag=Tag.objects.get(id=tag_id)
 	blogs=Blog.objects.filter(tags=get_tag)
 	tags=Tag.objects.all()
-	tag_latest=__get_latest(blogs)
-	tag_infos_all=__get_blog_info(blogs)
-	tag_infos,page_range=__my_pagination(request,tag_infos_all)
+	tag_latest,tag_infos,page_range=__get_blog_list(request,blogs)
 
 	content={'tag_infos':tag_infos,
 			 'page_range':page_range,
@@ -100,4 +113,31 @@ def tag(request,tag_id):
 			 'tags':tags}
 
 	return render_to_response('tag.html',content)
+
+
+def geek(request):
+
+	geek=Category1.objects.get(category_1='geek')
+	blogs_geek=Blog.objects.filter(category1=geek)
+
+	tags=Tag.objects.all()
+	
+	geek_latest,geek_infos,geek_page_range=__get_blog_list(request,blogs_geek)
+	
+	cpp_infos,cpp_page_range=__blog_by_category2(request,blogs_geek,'c/c++')
+	python_infos,python_page_range=__blog_by_category2(request,blogs_geek,'python/django')
+	website_infos,website_page_range=__blog_by_category2(request,blogs_geek,'website')
+
+	content={'geek_infos':geek_infos,
+			 'geek_page_range':geek_page_range,
+			 'cpp_infos':cpp_infos,
+			 'cpp_page_range':cpp_page_range,
+			 'python_infos':python_infos,
+			 'python_page_range':python_page_range,
+			 'website_infos':website_infos,
+			 'website_page_range':website_page_range,
+			 'geek_latest':geek_latest,
+			 'tags':tags}
+
+	return render_to_response('geek.html',content)
 

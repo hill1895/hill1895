@@ -29,6 +29,7 @@ urlpatterns=patterns('hill1895.views',
 	url(r'^$','index'),
     url(r'^blog_detail/blog_(?P<blog_id>\d+)/$','blog_detail',name='blog_detail'),
 	url(r'^tag_(?P<tag_id>\d+)/$','tag',name='tag'),
+    url(r'^geek/$','geek',name='geek'),
     )
 
 urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

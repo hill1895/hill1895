@@ -10,7 +10,7 @@
    <div>
       <ul class="nav navbar-nav">
          <li class="active"><a href="/">首页</a></li>
-         <li><a href="#">技术博客</a></li>
+         <li><a href="/geek">技术博客</a></li>
          <li><a href="#">生活</a></li>
          <li><a href="#">瞎扯</a></li>
       </ul>
@@ -33,7 +33,7 @@
 			</div>
 			</a>
 			<div class="blog_img">
-				<p><img src="{{ blog_info|get_value:'head_pic_url' }}" /></p>
+				<img src="{{ blog_info|get_value:'head_pic_url' }}" />
 			</div>
 		</div>
 		
@@ -41,11 +41,10 @@
 		<h3>This guy did't leave anything</h3>
 {% endfor %}
 
-{% endblock %}
 
-{% block pagenation %}
 
-<div id="pages">
+
+
 	<ul class="pagination">
 
 	{% if blog_infos.has_previous %}
@@ -69,11 +68,10 @@
     {% endif %}
 	</ul>
 
-</div>
+
+
 
 {% endblock %}
-
-
 
 
 {% block lastest_blog%}

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+GEEK--Blog
+
+{% endblock %}
+
+
+{% load hill1895_extras %}
+
+
+{% block navibar %}
+	<nav class="navbar navbar-inverse" role="navigation" id="navibar">
+	      <ul class="nav navbar-nav">		         
+	      	<li><a href="/">首页</a></li>
+	        <li class="active"><a href="/geek">技术博客</a></li>
+            <li><a href="#">生活</a></li>
+            <li><a href="#">瞎扯</a></li>
+		    </ul>
+		</nav>
+{% endblock %}
+
+
+{% block title_list %}
+
+<ul id="myTab" class="nav nav-tabs">
+   <li class="active">
+      <a href="#home" data-toggle="tab">
+         Tech
+      </a>
+   </li>
+   <li><a href="#c_cpp" data-toggle="tab">
+        C/C++
+      </a>
+   </li>
+      <li><a href="#python" data-toggle="tab">
+        Python/django
+      </a>
+   </li>
+      </li>
+    <li><a href="#website" data-toggle="tab">
+        Website
+      </a>
+   </li>
+
+</ul>	
+
+<div id="myTabContent" class="tab-content">
+
+	<div class="tab-pane fade in active" id="home">
+	{% include "geek/home.html" %}
+	</div>
+
+	<div class="tab-pane fade in" id="c_cpp">
+
+	{% include "geek/cpp.html" %}
+
+	</div>
+
+	<div class="tab-pane fade in" id="python">
+	{% include "geek/python.html" %}
+	</div>
+
+	<div class="tab-pane fade in" id="website">
+	{% include "geek/website.html" %}
+	</div>
+
+</div>
+
+
+{% endblock %}
+
+{% block lastest_blog%}
+	{% for blog in geek_latest %}
+	<li><a href="{% url 'blog_detail' blog|get_value:'id' %} " target=_blank>{{ blog|get_value:'title' }}</a></li>
+	{% endfor %}
+{% endblock %}
+
+{% block tags %} 
+   	<h5>
+   		{% for tag in tags %}
+
+   		<a href="{% url 'tag' tag.id %}">
+   			<span class="label label-default">{{ tag.tag }}</span>&nbsp;&nbsp;
+   		</a>
+   	{% endfor %}
+   </h5>
+{% endblock %}

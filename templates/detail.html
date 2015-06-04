@@ -34,11 +34,11 @@
 
    <div id="content">
       <h2>{{ blog.title }}</h2>
-      <h5 class="blog_info">发表时间: {{ blog.pub_time|date:"Y-m-d H:i:s"}}&nbsp&nbsp阅读量: {{ blog.page_views }}</h5>
-      <h5 class="tag">标签:&nbsp&nbsp
+      <h5 class="blog_info">发表时间: {{ blog.pub_time|date:"Y-m-d H:i:s"}}&nbsp;&nbsp;阅读量: {{ blog.page_views }}</h5>
+      <h5 class="tag">标签:&nbsp;&nbsp;
       {% for tag in blog_tags %}
-       <span class="label label-default">{{ tag }}</span>
-          &nbsp&nbsp
+       <a href="{% url 'tag' tag.id %}" class="tag_link"><span class="label label-default">{{ tag }}</span></a>
+          &nbsp;&nbsp;
           {% endfor %}</h5>
       <br/>
       {{ blog.content|safe }}

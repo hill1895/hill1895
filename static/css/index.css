@@ -12,18 +12,23 @@ body{background-color: #444444;
 
 #navibar{
 	margin-top: -50px;
-
+	border-radius: 0px;
 	filter:alpha(opacity=70);
 	-moz-opacity:0.7;
 	-khtml-opacity: 0.7;
 	opacity: 0.7;
 }
 
-
-
-.header{
+#head_img{
 	width: 900px;
 	height: 450px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+
+#head_img img{
+	width:900px;
 }
 
 
@@ -80,7 +85,34 @@ body{background-color: #444444;
 	text-align: right;
 
 }
+#pages{
+	text-align: left;
+}
 
+.pagination li a{
+	background-color: #333333;
+	color: #dddddd;
+	border-color: #444444;
+}
+
+.pagination li a:hover{
+	background-color: #666666;
+	border:none;
+	color: #ffffff;
+}
+
+.pagination > .active > a
+ {
+  color: #aaa;
+  cursor: default;
+  border-color: #444444;
+  background-color: #555555;
+}
+
+.pagination > .active > a:hover{
+	color: #aaa;
+	background-color: #555555;
+}
 
 #right_column{
 	width: 250px;
@@ -123,6 +155,25 @@ body{background-color: #444444;
 
 #tags h5 span{
 	font-weight: normal;
-	margin-top: 5px;
+	line-height: 30px;
 
+}
+
+#myTab{
+	border-bottom: 1px solid #222;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #eee;
+  cursor: default;
+  background-color: #333;
+  border: 1px solid #222;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs > li > a:hover{
+	background-color: #333;
+	border: 1px solid #222;
 }

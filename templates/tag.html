@@ -1,42 +1,39 @@
-{% extends "base.html" %}
+{% extends "index.html" %}
 
-{% block title %}hill1895{% endblock %}
+{% block title %}
 
-{% load hill1895_extras %}
+{{ get_tag.tag }}--Blog
 
-
-{% block navibar %}
-	<nav class="navbar navbar-inverse" role="navigation" id="navibar">
-   <div>
-      <ul class="nav navbar-nav">
-         <li class="active"><a href="/">首页</a></li>
-         <li><a href="#">技术博客</a></li>
-         <li><a href="#">生活</a></li>
-         <li><a href="#">瞎扯</a></li>
-      </ul>
-   </div>
-</nav>
 {% endblock %}
 
- {% block title_list %}
+
+{% load hill1895_extras %}
+{% block title_list %}
+
+<ul id="myTab" class="nav nav-tabs">
+   <li class="active">
+      <a href="#home" data-toggle="tab">
+         {{ get_tag.tag }}
+      </a>
+   </li>
+</ul>	
 
 
- {% for blog_info in blog_infos %}
-		
+{% for blog_info in tag_infos %}
+	
 		<div class="blog_list">
 			<a href="{% url 'blog_detail' blog_info|get_value:'id' %}" target=_blank>
 			<div class="blog_title">
 				<h3>
 					{{ blog_info|get_value:"title" }}
 				</h3>
-				<p>发表时间: {{ blog_info|get_value:"pub_time"|date:"Y-m-d H:i:s" }}&nbsp;&nbsp;阅读量: {{ blog_info|get_value:"page_views" }}&nbsp&nbsp</p>
+				<p>发表时间: {{ blog_info|get_value:"pub_time"|date:"Y-m-d H:i:s" }}&nbsp;&nbsp;阅读量: {{ blog_info|get_value:"page_views" }}&nbsp;&nbsp;</p>
 			</div>
 			</a>
 			<div class="blog_img">
 				<p><img src="{{ blog_info|get_value:'head_pic_url' }}" /></p>
 			</div>
 		</div>
-		
 {% empty %}
 		<h3>This guy did't leave anything</h3>
 {% endfor %}
@@ -48,21 +45,21 @@
 <div id="pages">
 	<ul class="pagination">
 
-	{% if blog_infos.has_previous %}
+	{% if tag_infos.has_previous %}
 		<li><a href="?page={{ blog_infos.previous_page_number }}">&laquo;</a></li>
 	{% else %}
 		<li class="active"><a>&laquo;</a></li>
 	{% endif %}
 
 	{% for p in page_range %}
-      {% ifequal p blog_infos.number %}
+      {% ifequal p tag_infos.number %}
      	 <li class="active"><a>{{p}}</a></li>
       {% else %}
       	<li><a href="?page={{p}}" title="第{{p}}页">{{p}}</a><li>
       {% endifequal %}
     {% endfor %}
 
-	{% if blog_infos.has_next %}
+	{% if tag_infos.has_next %}
     	<li><a href="?page={{ blog_infos.next_page_number }}">&raquo;</a></li>
     {% else %}
     	<li class="active"> <a>&raquo</a></li>
@@ -73,11 +70,8 @@
 
 {% endblock %}
 
-
-
-
 {% block lastest_blog%}
-	{% for blog in latest %}
+	{% for blog in tag_latest %}
 	<li><a href="{% url 'blog_detail' blog|get_value:'id' %} " target=_blank>{{ blog|get_value:'title' }}</a></li>
 	{% endfor %}
 {% endblock %}
@@ -92,4 +86,3 @@
    	{% endfor %}
    </h5>
 {% endblock %}
-

@@ -29,6 +29,8 @@ body{background-color: #444444;
 	-moz-opacity:0.8;
 	-khtml-opacity: 0.8;
 	opacity: 0.8;
+	border: none;
+	border-radius: 0px;
 }
 
 #content{
@@ -83,7 +85,12 @@ body{background-color: #444444;
 .tag{
 	color: #666666;
 }
-.tag span{
+
+.tag_link{
+	text-decoration: none;
+}
+
+.tag a span{
 	font-weight: normal;
 }
 

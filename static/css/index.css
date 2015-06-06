@@ -11,10 +11,10 @@
 #navibar{
 	margin-top: -50px;
 	border-radius: 0px;
-	filter:alpha(opacity=70);
-	-moz-opacity:0.7;
-	-khtml-opacity: 0.7;
-	opacity: 0.7;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
 }
 
 #head_img{
@@ -35,10 +35,6 @@
 	width: 640px;
 	float: left;
 	margin-bottom: 50px;
-	   filter:alpha(opacity=80);
-  -moz-opacity:0.8;
-  -khtml-opacity: 0.8;
-   opacity: 0.8;
 
 
 }
@@ -46,9 +42,23 @@
 .blog_list{
 	width: 640px;
 	height:160px;
-	background-color: #333333;
+	background-color: rgba(51,51,51,0.9);
 	margin-bottom: 10px;
 }
+
+@media \0screen\,screen\9
+.blog_list{
+	background-color: #333;
+	filter:alpha(opacity=90);
+	position: static;
+	*zoom:1;
+}
+
+.blog_list a,div,h3{
+	position: relative;
+}
+
+
 
 .blog_img{
 	float: right;
@@ -69,7 +79,6 @@
 .blog_title{
 	position: absolute;
 	float: left;
-	background-color: #333333;
 	width: 400px;
 	margin-left: 20px;
 	margin-top: 15px;
@@ -92,10 +101,12 @@
 
 
 .pagination li a{
-	background-color: #333333;
+	background-color: rgba(51,51,51,0.9);
 	color: #dddddd;
 	border-color: #444444;
 }
+
+
 
 .pagination li a:hover{
 	background-color: #666666;
@@ -108,7 +119,7 @@
   color: #aaa;
   cursor: default;
   border-color: #444444;
-  background-color: #555555;
+  background-color: rgba(85,85,85,0.9);
 }
 
 .pagination > .active > a:hover{
@@ -119,15 +130,11 @@
 #right_column{
 	width: 250px;
 	float: right;
-	filter:alpha(opacity=80);
-	-moz-opacity:0.8;
-	-khtml-opacity: 0.8;
-	opacity: 0.8;
 }
 
 #latest{
 	width: 100%;
-	background-color: #333333;
+	background-color: rgba(51,51,51,0.9);
 	padding: 5px 15px 5px 5px;
 }
 #latest h5{
@@ -138,15 +145,28 @@
 
 }
 
+
 #latest ol li{
 	font-size: 1em;
 	text-align: left;
 
 }
 
+@media \0screen\,screen\9
+#latest{
+	background-color: #333;
+	filter:alpha(opacity=90);
+	position: static;
+	*zoom:1;
+}
+
+#latest ol,h5{
+	position: relative;
+}
+
 #tags{
 	width: 100%;
-	background-color: #333333;
+	background-color: rgba(51,51,51,0.9);
 	padding: 5px 15px 5px 5px;
 	margin-top: 15px;
 }
@@ -165,9 +185,20 @@
 
 }
 
-#myTab{
-	border-bottom: 1px solid #222;
+@media \0screen\,screen\9
+#tags{
+	background-color: #333;
+	filter:alpha(opacity=90);
+	position: static;
+	*zoom:1;
+}
 
+#tags h5{
+	position: relative;
+}
+
+.nav-tabs{
+	border-bottom: none;
 }
 
 .nav-tabs > li.active > a,
@@ -175,21 +206,24 @@
 .nav-tabs > li.active > a:focus {
   color: #eee;
   cursor: default;
-  background-color: #333;
-  border: 1px solid #222;
+  background-color: rgba(51,51,51,0.9);
+  border-color: #333;
   border-bottom-color: transparent;
+
+
 
 }
 
 .nav-tabs > li >a {
 	color: #dddddd;
-	background-color: #222;
+	background-color: rgba(34,34,34,0.9);
+
 }
 
 
 .nav-tabs > li > a:visited{
 	background: transparent;
-	border: 1px solid #222;
+	border: none;
 }
 
 .nav-tabs > li > a:hover{
@@ -199,5 +233,5 @@
 
 .nav-tabs > li > a:active{
 	background: transparent;
-	border: 1px solid #222;
+	border:none;
 }

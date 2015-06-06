@@ -8,9 +8,12 @@
    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
    <link rel="stylesheet" type="text/css" href="/static/css/detail.css">
    <link rel="stylesheet" type="text/css" href="/static/css/ueditor/shCoreDefault.css">
+   <link rel="stylesheet" type="text/css" href="/static/css/ueditor/shThemeDefault.css">
 
 </head>
 <body>
+
+ 
 
 {% include "header.html" %}
 
@@ -25,7 +28,7 @@
             <li><a href="/">首页</a></li>
             <li><a href="/geek">技术博客</a></li>
             <li><a href="/essay">随笔</a></li>
-            <li><a href="#">瞎扯</a></li>
+            <li><a href="/joke">瞎扯</a></li>
          </ul>
       </div>
       </nav>
@@ -52,8 +55,11 @@
 	<script src="/static/js/jquery-1.11.3.min.js"></script>
 	<script src="/static/js/bootstrap/bootstrap.min.js"></script>
    <script src="/static/js/ueditor/shCore.js"></script>
-   <script type="text/javascript">      
-      SyntaxHighlighter.all();       
+   <script type="text/javascript">
+
+      SyntaxHighlighter.highlight();
+
    </script>
+
 </body>
 </html>

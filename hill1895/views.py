@@ -37,6 +37,7 @@ def __get_blog_info(objs):
 
 	return blog_info
 
+#pagination
 def __my_pagination(request,objs,display_num=6,after_range=6,before_range=5):
 	paginator=Paginator(objs,display_num)
 
@@ -160,7 +161,8 @@ def essay(request):
 	book_infos,book_page_range=__blog_by_category2(request,blogs_essay,'book')
 	movie_infos,movie_page_range=__blog_by_category2(request,blogs_essay,'movie')
 	game_infos,game_page_range=__blog_by_category2(request,blogs_essay,'game')
-
+	tour_infos,tour_page_range=__blog_by_category2(request,blogs_essay,'tour')
+	
 	content={'essay_infos':essay_infos,
 			 'essay_page_range':essay_page_range,
 			 'book_infos':book_infos,
@@ -169,7 +171,27 @@ def essay(request):
 			 'movie_page_range':movie_page_range,
 			 'game_infos':game_infos,
 			 'game_page_range':game_page_range,
+			 'tour_infos':tour_infos,
+			 'tour_page_range':tour_page_range,
 			 'essay_latest':essay_latest,
 			 'tags':tags}
 
 	return render_to_response('essay.html',content)
+
+
+def joke(request):
+
+	joke=Category1.objects.get(category_1='joke')
+	blogs_joke=Blog.objects.filter(category1=joke)
+
+	tags=Tag.objects.all()
+	
+	joke_latest,joke_infos,joke_page_range=__get_blog_list(request,blogs_joke)
+	
+	
+	content={'joke_infos':joke_infos,
+			 'joke_page_range':joke_page_range,
+			 'joke_latest':joke_latest,
+			 'tags':tags}
+
+	return render_to_response('joke.html',content)

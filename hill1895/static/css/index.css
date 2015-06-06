@@ -46,6 +46,18 @@
 	margin-bottom: 10px;
 }
 
+@media \0screen\,screen\9
+.blog_list{
+	background-color: #333;
+	filter:alpha(opacity=90);
+	position: static;
+	*zoom:1;
+}
+
+.blog_list a,div,h3{
+	position: relative;
+}
+
 
 
 .blog_img{
@@ -94,6 +106,8 @@
 	border-color: #444444;
 }
 
+
+
 .pagination li a:hover{
 	background-color: #666666;
 	border:none;
@@ -131,10 +145,23 @@
 
 }
 
+
 #latest ol li{
 	font-size: 1em;
 	text-align: left;
 
+}
+
+@media \0screen\,screen\9
+#latest{
+	background-color: #333;
+	filter:alpha(opacity=90);
+	position: static;
+	*zoom:1;
+}
+
+#latest ol,h5{
+	position: relative;
 }
 
 #tags{
@@ -158,6 +185,18 @@
 
 }
 
+@media \0screen\,screen\9
+#tags{
+	background-color: #333;
+	filter:alpha(opacity=90);
+	position: static;
+	*zoom:1;
+}
+
+#tags h5{
+	position: relative;
+}
+
 .nav-tabs{
 	border-bottom: none;
 }
@@ -169,7 +208,8 @@
   cursor: default;
   background-color: rgba(51,51,51,0.9);
   border-color: #333;
-  border-bottom:1px solid #333;
+  border-bottom-color: transparent;
+
 
 
 }

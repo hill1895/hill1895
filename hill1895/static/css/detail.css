@@ -1,7 +1,4 @@
 
-
-
-
 #main{
 	width: 800px;
 }
@@ -38,7 +35,9 @@
 	text-align: left;
 	margin-bottom: 30px;
 	font-size: 16px;
+	overflow: hidden;
 }
+
 
 
 #content h2{
@@ -76,9 +75,6 @@
 }
 
 
-#content p,img,a,pre{
-	position: relative;
-}
 
 .blog_info{
 	font-size: 0.875em;
@@ -99,5 +95,18 @@
 
 
 #content blockquote{
-	border-left: 5px solid #444444; 
+	border-left: 3px solid #ccc; 
 	font-size: 1em;
+
+}
+@media \0screen\,screen\9
+#content{
+	background-color: #333;
+	filter:alpha(opacity=90);
+	position: static;
+	*zoom:1;
+}
+
+.content a,div,h3,,h2,p,img,pre{
+	position: relative;
+}

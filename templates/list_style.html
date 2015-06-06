@@ -2,14 +2,14 @@
 
 
 	<div class="blog_list">
-			<a href="{% url 'blog_detail' blog_info|get_value:'id' %}" target=_blank>
+			
 			<div class="blog_title">
-				<h3>
+				<a href="{% url 'blog_detail' blog_info|get_value:'id' %}" target=_blank><h3>
 					{{ blog_info|get_value:"title" }}
-				</h3>
-				<p>发表时间: {{ blog_info|get_value:"pub_time"|date:"Y-m-d H:i:s" }}&nbsp;&nbsp;阅读量: {{ blog_info|get_value:"page_views" }}&nbsp&nbsp</p>
+				</h3></a>
+				<p>{{ blog_info|get_value:"pub_time"|date:"Y-m-d H:i:s" }}&nbsp;&nbsp;阅读量: {{ blog_info|get_value:"page_views" }}&nbsp;&nbsp;</p>
 			</div>
-			</a>
+			
 			<div class="blog_img">
 				<img src="{{ blog_info|get_value:'head_pic_url' }}" />
 			</div>

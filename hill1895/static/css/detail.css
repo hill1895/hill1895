@@ -1,0 +1,103 @@
+
+
+
+
+#main{
+	width: 800px;
+}
+#head_pic{
+	width: 800px;
+	height: 400px;
+	overflow: hidden;
+	text-align: center;
+}
+
+
+#head_pic img{
+	vertical-align: middle;
+	width: 100%;
+
+}
+#navibar{
+	position: absolute;
+	top:350px;
+	width: 800px;
+	filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+	border: none;
+	border-radius: 0px;
+}
+
+#content{
+	width: 100%;
+	background-color: rgba(51,51,51,0.9);
+	padding: 10px 30px 10px 30px;
+	color: #ddd;
+	text-align: left;
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+
+
+#content h2{
+	color: #eeeeee;
+}
+
+
+#content a{
+	text-decoration: underline;
+}
+
+#content a:link{
+	color: #bbbbbb;
+	text-decoration: underline;
+}
+
+#content a:visited{
+	color: #dddddd;
+	text-decoration: underline;
+}
+
+#content a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+#content a:active{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+
+#content p{
+	font-size: 1em;
+}
+
+
+#content p,img,a,pre{
+	position: relative;
+}
+
+.blog_info{
+	font-size: 0.875em;
+	color: #666666;
+}
+
+.tag{
+	color: #666666;
+}
+
+.tag_link{
+	text-decoration: none;
+}
+
+.tag a span{
+	font-weight: normal;
+}
+
+
+#content blockquote{
+	border-left: 5px solid #444444; 
+	font-size: 1em;

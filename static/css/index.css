@@ -35,6 +35,12 @@
 	width: 640px;
 	float: left;
 	margin-bottom: 50px;
+	   filter:alpha(opacity=80);
+  -moz-opacity:0.8;
+  -khtml-opacity: 0.8;
+   opacity: 0.8;
+
+
 }
 
 .blog_list{
@@ -113,6 +119,10 @@
 #right_column{
 	width: 250px;
 	float: right;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
 }
 
 #latest{
@@ -157,6 +167,7 @@
 
 #myTab{
 	border-bottom: 1px solid #222;
+
 }
 
 .nav-tabs > li.active > a,
@@ -167,10 +178,12 @@
   background-color: #333;
   border: 1px solid #222;
   border-bottom-color: transparent;
+
 }
 
 .nav-tabs > li >a {
 	color: #dddddd;
+	background-color: #222;
 }
 
 

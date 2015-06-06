@@ -96,7 +96,14 @@ def blog_detail(request,blog_id):
 	blog.page_views+=1
 	blog.save()
 	blog_tags=blog.tags.all()
-	return render_to_response('detail.html',{'blog':blog,'blog_tags':blog_tags})
+	category1=blog.category1.category_1
+	category2=blog.category2.category_2
+	return render_to_response('detail.html',
+		{'blog':blog,
+		'blog_tags':blog_tags,
+		'category1':category1,
+		'category2':category2
+		})
 
 
 def tag(request,tag_id):
@@ -141,3 +148,28 @@ def geek(request):
 
 	return render_to_response('geek.html',content)
 
+def essay(request):
+
+	essay=Category1.objects.get(category_1='essay')
+	blogs_essay=Blog.objects.filter(category1=essay)
+
+	tags=Tag.objects.all()
+	
+	essay_latest,essay_infos,essay_page_range=__get_blog_list(request,blogs_essay)
+	
+	book_infos,book_page_range=__blog_by_category2(request,blogs_essay,'book')
+	movie_infos,movie_page_range=__blog_by_category2(request,blogs_essay,'movie')
+	game_infos,game_page_range=__blog_by_category2(request,blogs_essay,'game')
+
+	content={'essay_infos':essay_infos,
+			 'essay_page_range':essay_page_range,
+			 'book_infos':book_infos,
+			 'book_page_range':book_page_range,
+			 'movie_infos':movie_infos,
+			 'movie_page_range':movie_page_range,
+			 'game_infos':game_infos,
+			 'game_page_range':game_page_range,
+			 'essay_latest':essay_latest,
+			 'tags':tags}
+
+	return render_to_response('essay.html',content)

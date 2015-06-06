@@ -34,9 +34,14 @@
 	width: 100%;
 	background-color: #333333;
 	padding: 10px 30px 10px 30px;
+	color: #ddd;
 	text-align: left;
 	margin-bottom: 30px;
 	font-size: 16px;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
 }
 
 
@@ -72,6 +77,10 @@
 
 #content p{
 	font-size: 1em;
+}
+
+#content pre{
+	padding-top: 0px;
 }
 
 .blog_info{

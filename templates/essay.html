@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+随笔-文章列表
+
+{% endblock %}
+
+
+{% load hill1895_extras %}
+
+
+{% block navibar %}
+	<nav class="navbar navbar-inverse" role="navigation" id="navibar">
+	      <ul class="nav navbar-nav">		         
+	      	<li><a href="/">首页</a></li>
+	        <li><a href="/geek">技术博客</a></li>
+          <li class="active"><a href="/essay">随笔</a></li>
+          <li><a href="#">瞎扯</a></li>
+		    </ul>
+		</nav>
+{% endblock %}
+
+
+{% block title_list %}
+
+<ul id="myTab" class="nav nav-tabs">
+   <li class="active">
+      <a href="#home" data-toggle="tab">
+         所有文章
+      </a>
+   </li>
+   <li><a href="#book" data-toggle="tab">
+        书评
+      </a>
+   </li>
+      <li><a href="#movie" data-toggle="tab">
+        影评
+      </a>
+   </li>
+      </li>
+    <li><a href="#game" data-toggle="tab">
+        球评
+      </a>
+   </li>
+
+</ul>	
+
+<div id="myTabContent" class="tab-content">
+
+	<div class="tab-pane fade in active" id="home">
+	{% include "essay/home.html" %}
+	</div>
+
+	<div class="tab-pane fade in" id="book">
+
+	{% include "essay/book.html" %}
+
+	</div>
+
+	<div class="tab-pane fade in" id="movie">
+	{% include "essay/movie.html" %}
+	</div>
+
+	<div class="tab-pane fade in" id="game">
+	{% include "essay/game.html" %}
+	</div>
+
+</div>
+
+
+{% endblock %}
+
+{% block lastest_blog%}
+	{% for blog in essay_latest %}
+	<li><a href="{% url 'blog_detail' blog|get_value:'id' %} " target=_blank>{{ blog|get_value:'title' }}</a></li>
+	{% endfor %}
+{% endblock %}
+
+{% block tags %} 
+   	<h5>
+   		{% for tag in tags %}
+
+   		<a href="{% url 'tag' tag.id %}">
+   			<span class="label label-default">{{ tag.tag }}</span>&nbsp;&nbsp;
+   		</a>
+   	{% endfor %}
+   </h5>
+{% endblock %}

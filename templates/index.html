@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}hill1895{% endblock %}
+{% block title %}刘文图熙1895{% endblock %}
 
 {% load hill1895_extras %}
 
@@ -11,7 +11,7 @@
       <ul class="nav navbar-nav">
          <li class="active"><a href="/">首页</a></li>
          <li><a href="/geek">技术博客</a></li>
-         <li><a href="#">生活</a></li>
+         <li><a href="/essay">随笔</a></li>
          <li><a href="#">瞎扯</a></li>
       </ul>
    </div>
@@ -22,23 +22,10 @@
 
 
  {% for blog_info in blog_infos %}
-		
-		<div class="blog_list">
-			<a href="{% url 'blog_detail' blog_info|get_value:'id' %}" target=_blank>
-			<div class="blog_title">
-				<h3>
-					{{ blog_info|get_value:"title" }}
-				</h3>
-				<p>发表时间: {{ blog_info|get_value:"pub_time"|date:"Y-m-d H:i:s" }}&nbsp;&nbsp;阅读量: {{ blog_info|get_value:"page_views" }}&nbsp&nbsp</p>
-			</div>
-			</a>
-			<div class="blog_img">
-				<img src="{{ blog_info|get_value:'head_pic_url' }}" />
-			</div>
-		</div>
-		
+{% include "list_style.html" %}		
+
 {% empty %}
-		<h3>This guy did't leave anything</h3>
+    <h3>这个人好懒，一个字都没写</h3>
 {% endfor %}
 
 
@@ -64,7 +51,7 @@
 	{% if blog_infos.has_next %}
     	<li><a href="?page={{ blog_infos.next_page_number }}">&raquo;</a></li>
     {% else %}
-    	<li class="active"> <a>&raquo</a></li>
+    	<li class="active"> <a>&raquo;</a></li>
     {% endif %}
 	</ul>
 

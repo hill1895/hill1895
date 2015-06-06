@@ -1,0 +1,197 @@
+
+
+
+
+#main{
+	width: 900px;
+	background-color: #333333;
+}
+
+
+#navibar{
+	margin-top: -50px;
+	border-radius: 0px;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+#head_img{
+	width: 900px;
+	height: 450px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+
+#head_img img{
+	width:900px;
+}
+
+
+
+#timeline{
+	width: 640px;
+	float: left;
+	margin-bottom: 50px;
+
+
+}
+
+.blog_list{
+	width: 640px;
+	height:160px;
+	background-color: rgba(51,51,51,0.9);
+	margin-bottom: 10px;
+}
+
+
+
+.blog_img{
+	float: right;
+	width: 180px;
+	height: 120px;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-right: 20px;
+	text-align:center;
+}
+
+.blog_img img{
+	width: 100%;
+	vertical-align:middle;
+
+}
+
+.blog_title{
+	position: absolute;
+	float: left;
+	width: 400px;
+	margin-left: 20px;
+	margin-top: 15px;
+	height: 130px;
+
+}
+
+.blog_title h3{
+	text-align: left;
+}
+
+.blog_title p{
+	position:absolute;
+	bottom: 0px;
+	right: 20px;
+	color: #666666;
+	text-align: right;
+
+}
+
+
+.pagination li a{
+	background-color: rgba(51,51,51,0.9);
+	color: #dddddd;
+	border-color: #444444;
+}
+
+.pagination li a:hover{
+	background-color: #666666;
+	border:none;
+	color: #ffffff;
+}
+
+.pagination > .active > a
+ {
+  color: #aaa;
+  cursor: default;
+  border-color: #444444;
+  background-color: rgba(85,85,85,0.9);
+}
+
+.pagination > .active > a:hover{
+	color: #aaa;
+	background-color: #555555;
+}
+
+#right_column{
+	width: 250px;
+	float: right;
+}
+
+#latest{
+	width: 100%;
+	background-color: rgba(51,51,51,0.9);
+	padding: 5px 15px 5px 5px;
+}
+#latest h5{
+	text-align: left;
+	font-size: 1.25em;
+	vertical-align: middle;
+	margin-left: 5px;
+
+}
+
+#latest ol li{
+	font-size: 1em;
+	text-align: left;
+
+}
+
+#tags{
+	width: 100%;
+	background-color: rgba(51,51,51,0.9);
+	padding: 5px 15px 5px 5px;
+	margin-top: 15px;
+}
+
+#tags h5{
+	text-align: left;
+	font-size: 1.25em;
+	vertical-align: middle;
+	margin-left: 5px;
+
+}
+
+#tags h5 span{
+	font-weight: normal;
+	line-height: 30px;
+
+}
+
+.nav-tabs{
+	border-bottom: none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #eee;
+  cursor: default;
+  background-color: rgba(51,51,51,0.9);
+  border-color: #333;
+  border-bottom:1px solid #333;
+
+
+}
+
+.nav-tabs > li >a {
+	color: #dddddd;
+	background-color: rgba(34,34,34,0.9);
+
+}
+
+
+.nav-tabs > li > a:visited{
+	background: transparent;
+	border: none;
+}
+
+.nav-tabs > li > a:hover{
+	background-color: #333;
+	border: 1px solid #222;
+}
+
+.nav-tabs > li > a:active{
+	background: transparent;
+	border:none;
+}

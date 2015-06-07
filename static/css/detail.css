@@ -1,43 +1,46 @@
 
-#main{
-	width: 800px;
-}
-#head_pic{
-	width: 800px;
-	height: 400px;
-	overflow: hidden;
-	text-align: center;
-}
 
-
-#head_pic img{
-	vertical-align: middle;
+#blog_img{
 	width: 100%;
+	overflow: hidden;
 
 }
+
+#blog_img img{
+
+	width: 100%;
+}
+
+
 #navibar{
-	position: absolute;
-	top:350px;
-	width: 800px;
+
+	width: 100%;
 	filter:alpha(opacity=90);
 	-moz-opacity:0.9;
 	-khtml-opacity: 0.9;
 	opacity: 0.9;
 	border: none;
 	border-radius: 0px;
+	text-align: center;
+	margin-top: -50px;
 }
 
 #content{
 	width: 100%;
 	background-color: rgba(51,51,51,0.9);
-	padding: 10px 30px 10px 30px;
 	color: #ddd;
 	text-align: left;
-	margin-bottom: 30px;
-	font-size: 16px;
+	font-size: 1.15em;
 	overflow: hidden;
-}
+	padding-top: 2em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 
+
+}
+.col-md-8 #content{
+	margin-top: -1.25em;
+}
 
 
 #content h2{

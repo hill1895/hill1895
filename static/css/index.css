@@ -1,13 +1,4 @@
 
-
-
-
-#main{
-	width: 900px;
-	background-color: #333333;
-}
-
-
 #navibar{
 	margin-top: -50px;
 	border-radius: 0px;
@@ -18,32 +9,23 @@
 }
 
 #head_img{
-	width: 900px;
-	height: 450px;
+	width: 100%;
 	overflow: hidden;
 	vertical-align: middle;
 }
 
 
 #head_img img{
-	width:900px;
+	width:100%;
 }
 
-
-
-#timeline{
-	width: 640px;
-	float: left;
-	margin-bottom: 50px;
-
-
-}
 
 .blog_list{
-	width: 640px;
-	height:160px;
+	width: 100%;
+	padding:1.5em 1.5em 1.5em 1em;
 	background-color: rgba(51,51,51,0.9);
-	margin-bottom: 10px;
+	margin-bottom: 1em;
+	vertical-align: middle;
 }
 
 @media \0screen\,screen\9
@@ -62,12 +44,9 @@
 
 .blog_img{
 	float: right;
-	width: 180px;
-	height: 120px;
+	height:100%;
 	overflow: hidden;
-	margin-top: 20px;
-	margin-right: 20px;
-	text-align:center;
+
 }
 
 .blog_img img{
@@ -78,11 +57,10 @@
 
 .blog_title{
 	position: absolute;
+	width: 57%;
+	height: 100%;
 	float: left;
-	width: 400px;
-	margin-left: 20px;
-	margin-top: 15px;
-	height: 130px;
+	margin-left: 1em;
 
 }
 
@@ -91,9 +69,8 @@
 }
 
 .blog_title p{
-	position:absolute;
-	bottom: 0px;
-	right: 20px;
+	position: absolute;
+	bottom: 20%;
 	color: #666666;
 	text-align: right;
 
@@ -128,20 +105,20 @@
 }
 
 #right_column{
-	width: 250px;
+	width: 100%;
 	float: right;
 }
 
 #latest{
 	width: 100%;
 	background-color: rgba(51,51,51,0.9);
-	padding: 5px 15px 5px 5px;
+	padding: 0.5em 1em 0.5em 0.5em;
 }
 #latest h5{
 	text-align: left;
 	font-size: 1.25em;
 	vertical-align: middle;
-	margin-left: 5px;
+	margin-left: 0.5em;
 
 }
 
@@ -167,21 +144,21 @@
 #tags{
 	width: 100%;
 	background-color: rgba(51,51,51,0.9);
-	padding: 5px 15px 5px 5px;
-	margin-top: 15px;
+	padding: 0.5em 1em 0.5em 0.5em;
+	margin-top: 1em;
 }
 
 #tags h5{
 	text-align: left;
 	font-size: 1.25em;
 	vertical-align: middle;
-	margin-left: 5px;
+	margin-left: 0.5em;
 
 }
 
 #tags h5 span{
 	font-weight: normal;
-	line-height: 30px;
+	line-height: 2.5em;
 
 }
 

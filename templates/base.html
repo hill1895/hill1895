@@ -15,63 +15,78 @@
 <body>
 {% include "header.html" %}
 
-<center>
-	<div id="main">
-		<div id="head_img">
-			<img src="/static/img/banner.jpg" class="header" />
-		</div>
 
-		{% block navibar %}
-		<nav class="navbar navbar-inverse" role="navigation" id="navibar">
-		   <div>
-		      <ul class="nav navbar-nav">
-		         <li><a href="/">首页</a></li>
-		         <li><a href="/geek">技术博客</a></li>
-		         <li><a href="/essay">随笔</a></li>
-		         <li><a href="/joke">瞎扯</a></li>
-		      </ul>
-		   </div>
-		</nav>
-	{% endblock %}
-		<div id="timeline">
-		 {% block title_list %}
-			
-	       {% endblock %}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
 
-	     {% block pagenation %}
-
-	     {% endblock %}
-
+				<div id="head_img">
+					<img src="/static/img/banner.jpg"/>
+				</div>
+			</div>
 		</div>
 		
-
-		<div id="right_column">
-			
-			<div id="latest">
-				<h5>最近文章</h5>
-
-				<ol>
-					{% block lastest_blog%}
-					
-					{% endblock %}
-				</ol>
-			</div>
-
-			<div id="tags">
-				<h5>标签</h5>
-				{% block tags %}
-				<p></p>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				{% block navibar %}
+				<nav class="navbar navbar-inverse" role="navigation" id="navibar">
+				      <ul class="nav navbar-nav">
+				         <li><a href="/">首页</a></li>
+				         <li><a href="/geek">技术博客</a></li>
+				         <li><a href="/essay">随笔</a></li>
+				         <li><a href="/joke">瞎扯</a></li>
+				      </ul>
+				</nav>
 				{% endblock %}
 			</div>
 		</div>
 
+		<div class="row">
+			<div class="col-md-7 col-md-offset-1  col-sm-12 col-xm-12">
 
+				<div id="timeline">
+				 {% block title_list %}
+					
+			       {% endblock %}
+
+			     {% block pagenation %}
+
+			     {% endblock %}
+
+				</div>
+			</div>
+		
+			<div class="col-md-3">
+				
+				<div id="right_column">
+
+					<div id="latest">
+						<h5>最近文章</h5>
+
+						<ol>
+							{% block lastest_blog%}
+										
+							{% endblock %}
+						</ol>
+					</div>
+							
+					<div id="tags">	
+						<h5>标签</h5>
+						{% block tags %}
+										
+						{% endblock %}
+									
+					</div>	
+				</div>					
+			</div>
+		</div>
 	</div>
-</center>
+
 	
 
 
 	<script src="/static/js/jquery-1.11.3.min.js"></script>
 	<script src="/static/js/bootstrap/bootstrap.min.js"></script>
+	<script src="/static/js/main.js"></script>
 </body>
 </html>

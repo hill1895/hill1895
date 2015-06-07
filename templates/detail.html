@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="content-Type" content="text/html;charset=utf8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ blog.title }}</title>
 
    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap/bootstrap.min.css">
@@ -14,14 +15,14 @@
 <body>
 
  
-<div class="hidden-xs hidden-sm">
+
    {% include "header.html" %}
-</div>
+
 
 <div class="container">
 
    <div class="row">
-      <div class="col-md-8 col-md-offset-2 hidden-xs hidden-sm">
+      <div class="col-md-8 col-md-offset-2">
          <div id="blog_img">
             <img src="{{ blog.head_pic_url }}">
          </div>
@@ -49,10 +50,10 @@
             <h2>{{ blog.title }}</h2>
             <h5 class="blog_info">发表时间: {{ blog.pub_time|date:"Y-m-d H:i:s"}}&nbsp;&nbsp;阅读量: {{ blog.page_views }}</h5>
             <h5 class="tag">标签:&nbsp;&nbsp;
-            {% for tag in blog_tags %}
-             <a href="{% url 'tag' tag.id %}" class="tag_link"><span class="label label-default">{{ tag }}</span></a>
-                &nbsp;&nbsp;
-                {% endfor %}</h5>
+               {% for tag in blog_tags %}
+                  <a href="{% url 'tag' tag.id %}" class="tag_link"><span class="label label-default">{{ tag }}</span></a>&nbsp;&nbsp;
+               {% endfor %}
+            </h5>
             <br/>
             {{ blog.content|safe }}
          </div>

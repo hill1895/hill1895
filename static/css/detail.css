@@ -39,7 +39,7 @@
 
 }
 .col-md-8 #content{
-	margin-top: -1.25em;
+	margin-top: 0;
 }
 
 
@@ -110,6 +110,7 @@
 	*zoom:1;
 }
 
-.content a,div,h3,,h2,p,img,pre{
+#content a,div,h3,,h2,p,img,pre{
 	position: relative;
+	word-break:break-all;
 }

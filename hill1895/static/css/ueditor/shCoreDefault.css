@@ -58,7 +58,6 @@
   position: relative !important;
   overflow: auto !important;
   font-size: 1em !important;
-  word-break:break-all;
 }
 .syntaxhighlighter.source {
   overflow: hidden !important;

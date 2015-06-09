@@ -30,11 +30,12 @@
 	background-color: rgba(51,51,51,0.9);
 	color: #ddd;
 	text-align: left;
-	font-size: 1.15em;
+	font-size: 1rem;
+	font-size: 16px;
 	overflow: hidden;
 	padding-top: 2em;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
+	padding-left: 2em;
+	padding-right: 2em;
 
 
 }

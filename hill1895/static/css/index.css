@@ -20,6 +20,7 @@
 }
 
 
+
 .blog_list{
 	width: 100%;
 	padding:1.5em 1.5em 1.5em 1em;
@@ -116,7 +117,7 @@
 }
 #latest h5{
 	text-align: left;
-	font-size: 1.25em;
+	font-size: 1em;
 	vertical-align: middle;
 	margin-left: 0.5em;
 
@@ -124,7 +125,8 @@
 
 
 #latest ol li{
-	font-size: 1em;
+	font-size: 0.875em;
+	font-size: 14px;
 	text-align: left;
 
 }
@@ -150,7 +152,8 @@
 
 #tags h5{
 	text-align: left;
-	font-size: 1.25em;
+	font-size: 1em;
+	font-size: 16px;
 	vertical-align: middle;
 	margin-left: 0.5em;
 
@@ -158,6 +161,8 @@
 
 #tags h5 span{
 	font-weight: normal;
+	font-size: 0.875em;
+	font-size: 14px;
 	line-height: 2.5em;
 
 }

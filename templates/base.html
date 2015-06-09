@@ -62,7 +62,7 @@
 				<div id="right_column">
 
 					<div id="latest">
-						<h5>最近文章</h5>
+						<h4>最近文章</h4>
 
 						<ol>
 							{% block lastest_blog%}
@@ -72,7 +72,7 @@
 					</div>
 							
 					<div id="tags">	
-						<h5>标签</h5>
+						<h4>标签</h4>
 						{% block tags %}
 										
 						{% endblock %}
@@ -81,10 +81,14 @@
 				</div>					
 			</div>
 		</div>
-	</div>
-
 	
-
+		<div class="row">
+				<div class="col-md-10 col-md-offset-1 hidden-xs hidden-sm">
+					{% include "footer.html" %}
+				</div>
+		</div>
+	
+	</div>
 
 	<script src="/static/js/jquery-1.11.3.min.js"></script>
 	<script src="/static/js/bootstrap/bootstrap.min.js"></script>

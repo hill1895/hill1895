@@ -23,10 +23,34 @@ body{
     background-size: cover;
 }
 
-h2{
-	font-size:1.6rem;
-	font-size: 25.6px;
+h1{
+	font-size: 2rem;
+	font-size: 32px;
 }
+
+h2{
+	font-size:1.5rem;
+	font-size: 24px;
+}
+h3{
+	font-size:1.17rem;
+	font-size: 18.72px;
+}
+
+h4{
+	font-size:1rem;
+	font-size:16px;
+}
+
+h5{
+	font-size:0.83rem;
+	font-size:13.28px;
+}
+h6{
+	font-size:0.67rem;
+	font-size:10.72px;
+}
+
 
 p{
 	font-size: 14px;
@@ -63,6 +87,7 @@ a:active{
 	-khtml-opacity: 0.9;
 	opacity: 0.9;
 	font-size: 0.875rem;
+	font-size: 14px;
 
 }
 
@@ -73,18 +98,19 @@ a:active{
 }
 
 .navbar-nav li a{
-	font-size: 0.875em;
+	font-size: 0.875rem;
 	font-size: 14px;
 }
 
 .nav-tabs li a{
-	font-size: 0.875em;
+	font-size: 0.875rem;
 	font-size: 14px;
 
 }
 .dropdown-menu{
 	background-color: #222222;
 	font-size: 0.875rem;
+	font-size: 14px;
 }
 
 .dropdown-menu li a{
@@ -95,7 +121,23 @@ a:active{
 	margin-right: 1em;
 }
 
+#footer{
+	margin-bottom: 6rem;
+	font-size: 0.875rem;
+	color: #bbb;
+	text-align: center;
+}
+#footer hr{
+	border-color: #bbb;
+}
 
+#footer ul li{
+	border-right: #bbb solid 1px;
+}
+
+#footer ul li:last-child{
+	border-right: none;
+}
 
 
 

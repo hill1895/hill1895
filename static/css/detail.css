@@ -81,8 +81,8 @@
 
 
 .blog_info{
-	font-size: 0.875em;
 	color: #666666;
+	font-size: 0.875em;
 }
 
 .tag{
@@ -95,6 +95,7 @@
 
 .tag a span{
 	font-weight: normal;
+	font-size: 1em;
 }
 
 

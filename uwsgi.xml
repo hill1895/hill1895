@@ -3,5 +3,5 @@
  	<socket>127.0.0.1:9090</socket>
 	<pythonpath>..</pythonpath>
  	<module>mysite.wsgi</module>
- 	<daemonize>/var/www/hill1895/log/uwsgi.log</daemonize>
+ 	<daemonize>/var/www/log/hill1895/uwsgi.log</daemonize>
 </uwsgi>

@@ -12,6 +12,9 @@ $(document).ready(function(){
 	blog_img_height=$(".blog_img").height();
 	$(".blog_img").width(blog_img_height/0.5625);
 
+	
+
+
 
 
 	var breakpoint = 0;

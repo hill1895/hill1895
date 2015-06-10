@@ -1,8 +1,7 @@
 <uwsgi>
 	<master>true</master>
  	<socket>127.0.0.1:9090</socket>
- 	<chdir>/var/www/hill1895/mysite</chdir>
-	<pythonpath>..</pythonpath>
- 	<module>mysite.wsgi:application</module>
+	<pythonpath>/var/www/hill1895/</pythonpath>
+ 	<module>mysite.wsgi</module>
  	<daemonize>/var/www/log/hill1895/uwsgi.log</daemonize>
 </uwsgi>

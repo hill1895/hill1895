@@ -1,5 +1,12 @@
 
 
+body .syntaxhighlighter .line
+{
+white-space: pre-wrap !important;
+word-break:break-all;
+}
+
+
 #blog_img{
 	width: 100%;
 	overflow: hidden;
@@ -78,8 +85,6 @@
 	font-size: 1em;
 }
 
-
-
 .blog_info{
 	color: #666666;
 	font-size: 0.875em;
@@ -114,5 +119,4 @@
 
 #content a,div,h3,,h2,p,img,pre{
 	position: relative;
-	word-break:break-all;
 }

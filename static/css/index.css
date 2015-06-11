@@ -43,6 +43,11 @@
 
 @media (max-width: 768px) {
 
+	body{
+		background-color: #444;
+		background-image:none;
+	}
+
 	#timeline{
 		margin-top: 1rem;
 	}
@@ -56,6 +61,7 @@
 
 	#myTab li a{
 		font-size: 0.75rem;
+		font-size: 12px;
 	}
 	.blog_title{
 	padding:0;
@@ -68,14 +74,23 @@
 
 	}
 	.blog_title h2{
+		width: 100%;
 		font-size: 1rem;
-		margin-bottom: 1rem;
+		font-size: 16px;
+		top: 20%;
+	
 	}
 	.blog_title p{
 		position: absolute;
 		font-size: 0.625rem;
+		font-size: 10px;
 		top:70%;
 
+	}
+
+	.pagination li a{
+		font-size: 0.75rem;
+		font-size: 12px;
 	}
 }
 

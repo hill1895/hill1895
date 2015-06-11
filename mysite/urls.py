@@ -20,12 +20,14 @@ from django.conf.urls import include, url, patterns
 from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
+from django.views.generic.base import RedirectView
 from hill1895 import views
 
 
 urlpatterns=patterns('hill1895.views',
 	url(r'^admin/', include(admin.site.urls)),
 	url(r'^ueditor/',include('DjangoUeditor.urls')),
+    url(r'^favicon.ico$',RedirectView.as_view(url='/static/img/favicon.ico')),
 	url(r'^$','index'),
     url(r'^blog_detail/blog_(?P<blog_id>\d+)/$','blog_detail',name='blog_detail'),
 	url(r'^tag_(?P<tag_id>\d+)/$','tag',name='tag'),

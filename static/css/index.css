@@ -58,6 +58,7 @@
 		font-size: 0.75rem;
 	}
 	.blog_title{
+	padding:0;
 	position: absolute;
 	top:0;
 	width: 57%;
@@ -197,6 +198,7 @@
 
 #tags h4{
 	text-align: left;
+	font-size: 1rem;
 	font-size: 16px;
 	vertical-align: middle;
 	margin-left: 0.5em;
@@ -205,8 +207,8 @@
 
 #tags h5 span{
 	font-weight: normal;
-	font-size: 0.875rem;
-	font-size: 14px;
+	font-size: 0.625rem;
+	font-size: 12px;
 	line-height: 2.5em;
 	margin-left: 0.5em;
 

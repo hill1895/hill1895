@@ -39,6 +39,18 @@
 	margin-left: 1em;
 
 	}
+
+	.blog_img{
+	float: right;
+	height:100%;
+	overflow: hidden;
+
+	}
+	.blog_img img{
+		width: 100%;
+		vertical-align:middle;
+
+	}
 }
 
 @media (max-width: 768px) {
@@ -46,6 +58,11 @@
 	body{
 		background-color: #444;
 		background-image:none;
+	}
+
+	.container{
+		width: 100%;
+		padding: 0;
 	}
 
 	#timeline{
@@ -88,10 +105,28 @@
 
 	}
 
+	.blog_img{
+		float: right;
+		height:70%;
+		overflow: hidden;
+		top:15%;
+		margin-right: 0.3em;
+		text-align: center;
+
+	}
+
+	.blog_img img{
+		height: 100%;
+		text-align: center;
+
+	}
+
 	.pagination li a{
 		font-size: 0.75rem;
 		font-size: 12px;
 	}
+
+
 }
 
 
@@ -110,18 +145,9 @@
 
 
 
-.blog_img{
-	float: right;
-	height:100%;
-	overflow: hidden;
 
-}
 
-.blog_img img{
-	width: 100%;
-	vertical-align:middle;
 
-}
 
 
 

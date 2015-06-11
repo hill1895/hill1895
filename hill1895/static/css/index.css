@@ -21,13 +21,64 @@
 
 
 
-.blog_list{
+@media (min-width: 768px) {
+	.blog_list{
 	width: 100%;
-	padding:1.5em 1.5em 1.5em 1em;
+	padding:1.5rem 1.5rem 1.5rem 1rem;
 	background-color: rgba(51,51,51,0.9);
 	margin-bottom: 1em;
 	vertical-align: middle;
+	}
+
+	.blog_title{
+	position: absolute;
+	top:10%;
+	width: 57%;
+	height: 100%;
+	float: left;
+	margin-left: 1em;
+
+	}
 }
+
+@media (max-width: 768px) {
+
+	#timeline{
+		margin-top: 1rem;
+	}
+	.blog_list{
+	width: 100%;
+	padding:0.25rem 0.25rem 0.25rem 0.1rem;
+	background-color: rgba(51,51,51,0.9);
+	margin-bottom: 1em;
+	vertical-align: middle;
+	}
+
+	#myTab li a{
+		font-size: 0.75rem;
+	}
+	.blog_title{
+	position: absolute;
+	top:0;
+	width: 57%;
+	height: 100%;
+	float: left;
+	margin-left: 1em;
+
+	}
+	.blog_title h2{
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+	.blog_title p{
+		position: absolute;
+		font-size: 0.625rem;
+		top:70%;
+
+	}
+}
+
+
 
 @media \0screen\,screen\9
 .blog_list{
@@ -56,14 +107,7 @@
 
 }
 
-.blog_title{
-	position: absolute;
-	width: 57%;
-	height: 100%;
-	float: left;
-	margin-left: 1em;
 
-}
 
 .blog_title h3{
 	text-align: left;

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="content-Type" content="text/html;charset=utf8"/>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<title>{{ blog.title }}</title>
 
    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap/bootstrap.min.css">
@@ -22,7 +22,7 @@
 <div class="container">
 
    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-10 col-md-offset-1">
          <div id="blog_img">
             <img src="{{ blog.head_pic_url }}">
          </div>
@@ -30,7 +30,7 @@
    </div>
 
    <div class="row">
-      <div class="col-md-8 col-md-offset-2 hidden-xs hidden-sm">
+      <div class="col-md-10 col-md-offset-1 hidden-xs hidden-sm">
          <nav class="navbar navbar-inverse" role="navigation" id="navibar">
                <ul class="nav navbar-nav">
                   <li><a href="/">首页</a></li>
@@ -44,7 +44,7 @@
 
    <div class="row">
 
-      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+      <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
 
          <div id="content">
             <h2>{{ blog.title }}</h2>
@@ -62,7 +62,7 @@
    </div>
 
       <div class="row">
-            <div class="col-md-8 col-md-offset-2 hidden-xs hidden-sm">
+            <div class="col-md-10 col-md-offset-1 hidden-xs hidden-sm">
                {% include "footer.html" %}
             </div>
       </div>

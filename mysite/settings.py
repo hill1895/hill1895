@@ -126,7 +126,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT='/var/www/hill1895/static/'
 STATICFILES_DIRS=(
     os.path.join(BASE_DIR,'hill1895/static').replace('\\','/'),
-    '/var/www/hill1895/hill1895/static/',
+   '/var/www/hill1895/hill1895/static/',
     )
 
 

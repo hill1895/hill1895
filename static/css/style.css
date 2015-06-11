@@ -14,7 +14,7 @@ body{
     font-size: 16px;
     color: #bbbbbb;
     text-align: left;
-
+    margin:0;
     background-color: #444;
     background-image: url(/static/img/bg.jpg);
     background-attachment: fixed;
@@ -92,7 +92,7 @@ a:active{
 }
 
 #logo{
-	margin-top: 0.5em;
+	margin-top: 0.4em;
 	margin-left: 1em;
 
 }

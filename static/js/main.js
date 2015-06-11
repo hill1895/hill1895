@@ -12,7 +12,7 @@ $(document).ready(function(){
 	blog_img_height=$(".blog_img").height();
 	$(".blog_img").width(blog_img_height/0.5625);
 
-
+	$("#content img").addClass("img-responsive");
 
 	var breakpoint = 0;
 

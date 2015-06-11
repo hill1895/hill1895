@@ -1,5 +1,6 @@
 
 
+
 body .syntaxhighlighter .line
 {
 white-space: pre-wrap !important;
@@ -32,22 +33,40 @@ word-break:break-all;
 	margin-top: -50px;
 }
 
-#content{
-	width: 100%;
-	background-color: rgba(51,51,51,0.9);
-	color: #ddd;
-	text-align: left;
-	font-size: 1rem;
-	font-size: 16px;
-	overflow: hidden;
-	padding-top: 2em;
-	padding-left: 2em;
-	padding-right: 2em;
+@media (min-width: 768px) {
+	#content{
+		width: 100%;
+		background-color: rgba(51,51,51,0.9);
+		color: #ddd;
+		text-align: left;
+		font-size: 1rem;
+		font-size: 16px;
+		overflow: hidden;
+		padding-top: 1em;
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-bottom: 1em;
+		margin-top: -1.3em;
 
+
+	}
 
 }
-.col-md-8 #content{
-	margin-top: 0;
+
+@media (max-width: 768px) {
+	#content{
+		width: 100%;
+		background-color: rgba(51,51,51,0.9);
+		color: #ddd;
+		text-align: left;
+		font-size: 0.875rem;
+		font-size: 14px;
+		overflow: hidden;
+		margin: 0;
+		padding: 0 0.5em 0.5em 0.5em;
+
+	}
+
 }
 
 

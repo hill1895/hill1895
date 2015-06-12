@@ -12,19 +12,19 @@ from hill1895.models import Blog,Tag,Category1,Category2
 
 
 __category1={
-			u'Geek':'技术博客',
-			u'Essay':'随笔',
-			u'Joke':'瞎扯'
+			'Geek':'技术博客',
+			'Essay':'随笔',
+			'Joke':'瞎扯'
 			}
 __category2={
-			u'C/C++':'C/C++',
-			u'Python/Django':'Python/Django',
-			u'Website':'Web',
-			u'Book':'读书',
-			u'Movie':'影评',
-			u'Game':'球评',
-			u'Tour':'游记',
-			u'Joke':'瞎扯'
+			'C/C++':'C/C++',
+			'Python/Django':'Python/Django',
+			'Website':'Web',
+			'Book':'读书',
+			'Movie':'影评',
+			'Game':'球评',
+			'Tour':'游记',
+			'Joke':'瞎扯'
 			}
 
 def __get_latest(objs,max_num=8):

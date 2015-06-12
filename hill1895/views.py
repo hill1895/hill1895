@@ -9,6 +9,24 @@ from hill1895.models import Blog,Tag,Category1,Category2
 # Create your views here.
 
 #some function would be used in views
+
+
+__category1={
+			u'Geek':'技术博客',
+			u'Essay':'随笔',
+			u'Joke':'瞎扯'
+			}
+__category2={
+			u'C/C++':'C/C++',
+			u'Python/Django':'Python/Django',
+			u'Website':'Web',
+			u'Book':'读书',
+			u'Movie':'影评',
+			u'Game':'球评',
+			u'Tour':'游记',
+			u'Joke':'瞎扯'
+			}
+
 def __get_latest(objs,max_num=8):
 
 	obj_num=objs.count()
@@ -29,11 +47,15 @@ def __get_blog_info(objs):
 	blog_info=[]
 
 	for blog in objs:
+		category1=blog.category1.category_1
+		category2=blog.category2.category_2
 		blog_info.append({'title':blog.title,
 			'id':blog.id,
 			'head_pic_url':blog.head_pic_url,
 			'pub_time':blog.pub_time,
-			'page_views':blog.page_views})
+			'page_views':blog.page_views,
+			'category1':__category1[category1],
+			'category2':__category2[category2]})
 
 	return blog_info
 
@@ -102,8 +124,10 @@ def blog_detail(request,blog_id):
 	return render_to_response('detail.html',
 		{'blog':blog,
 		'blog_tags':blog_tags,
-		'category1':category1,
-		'category2':category2
+		'category1':__category1[category1],
+		'category2':__category2[category2],
+		'category1_url':category1.lower(),
+		'category2_url':category2.lower()
 		})
 
 
@@ -181,8 +205,8 @@ def essay(request):
 
 def joke(request):
 
-	joke=Category1.objects.get(category_1='joke')
-	blogs_joke=Blog.objects.filter(category1=joke)
+	joke=Category2.objects.get(category_2='joke')
+	blogs_joke=Blog.objects.filter(category2=joke)
 
 	tags=Tag.objects.all()
 	

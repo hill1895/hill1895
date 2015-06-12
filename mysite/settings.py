@@ -25,7 +25,7 @@ TEMPLATES_DIRS=(
 SECRET_KEY = '&1&-t%7=y@yn&7f33-4s)ok#qa%qmckxe!rwv57cqou0x2)+xj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['hill1895.rocks',
                  'www.hill1895.rocks'
@@ -122,11 +122,11 @@ USE_TZ = True
 #STATIC_ROOT=os.path.join(os.path.dirname(SITE_ROOT),'static').replace('\\','/')
 
 STATIC_URL = '/static/'
-#STATIC_ROOT=os.path.join(BASE_DIR,'static').replace('\\','/')
-STATIC_ROOT='/var/www/hill1895/static/'
+STATIC_ROOT=os.path.join(BASE_DIR,'static').replace('\\','/')
+#STATIC_ROOT='/var/www/hill1895/static/'
 STATICFILES_DIRS=(
     os.path.join(BASE_DIR,'hill1895/static').replace('\\','/'),
-   '/var/www/hill1895/hill1895/static/',
+   #'/var/www/hill1895/hill1895/static/',
     )
 
 

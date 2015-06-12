@@ -10,7 +10,8 @@ $(document).ready(function(){
 
 	blog_info_width=$(".blog_list").width();
 
-	if($(document).outerWidth()>768)
+
+	if($(document).outerWidth()>450)
 	{
 		$(".blog_list").height(blog_info_width*0.2);
 	}
@@ -18,9 +19,9 @@ $(document).ready(function(){
 		$(".blog_list").height(blog_info_width*0.35);
 	}
 
-
 	blog_img_height=$(".blog_img").height();
-	if($(document).outerWidth()>768)
+	
+	if($(document).outerWidth()>450)
 	{
 		$(".blog_img").width(blog_img_height/0.5625);
 	}

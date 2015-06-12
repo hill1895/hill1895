@@ -2,3 +2,5 @@ hill1895/migrations/*.py
 hill1895/migrations/*.pyc
 !hill1895/migrations/__init__.py
 !hill1895/migrations/__init__.pyc
+mysite/settings.py
+mysite/settings.pyc

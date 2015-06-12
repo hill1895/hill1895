@@ -49,6 +49,7 @@
          <div id="content">
             <h2>{{ blog.title }}</h2>
             <h5 class="blog_info">发表时间: {{ blog.pub_time|date:"Y-m-d H:i:s"}}&nbsp;&nbsp;阅读量: {{ blog.page_views }}</h5>
+           <h5 class="blog_info"><a href="/{{ category1_url }}">{{ category1 }}&nbsp;/&nbsp;{{ category2 }}</a></h5>
             <h5 class="tag">标签:&nbsp;&nbsp;
                {% for tag in blog_tags %}
                   <a href="{% url 'tag' tag.id %}" class="tag_link"><span class="label label-default">{{ tag }}</span></a>&nbsp;&nbsp;
@@ -62,7 +63,7 @@
    </div>
 
       <div class="row">
-            <div class="col-md-8 col-md-offset-2 hidden-xs hidden-sm">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 hidden-xs">
                {% include "footer.html" %}
             </div>
       </div>
@@ -75,7 +76,7 @@
    <script src="/static/js/ueditor/shCore.js"></script>
    <script src="/static/js/main.js"></script>
    <script type="text/javascript">
-SyntaxHighlighter.all();
+      SyntaxHighlighter.all();
    </script>
 
 </body>

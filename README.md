@@ -16,3 +16,5 @@ SyntaxHighlighter来对pre标签中的代码做代码高亮，目前与Bootstrap
 #####2015.6.12更新
 1. 加入Favicon.ico
 2. 修改一些网页样式
+#####2015.6.22更新
+1. 

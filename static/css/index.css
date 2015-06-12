@@ -12,6 +12,7 @@
 	width: 100%;
 	overflow: hidden;
 	vertical-align: middle;
+	margin-top: 50px;
 }
 
 
@@ -21,13 +22,29 @@
 
 
 
-@media (min-width: 768px) {
+
+@media (min-width: 769px) {
 	.blog_list{
 	width: 100%;
 	padding:1.5rem 1.5rem 1.5rem 1rem;
-	background-color: rgba(51,51,51,0.9);
+	background-color: rgba(34,34,34,0.9);
 	margin-bottom: 1em;
 	vertical-align: middle;
+	}
+
+	.blog_list span{
+		top:0;
+		left: 0;
+		position: absolute;
+		font-size: 0.875rem;
+		font-size: 14px;
+		font-weight: normal;
+		border-radius:0;
+	}
+
+	.blog_list:hover{
+		background-color: rgba(51,51,51,0.9);
+		border-left: 5px solid #0066ff;
 	}
 
 	.blog_title{
@@ -53,7 +70,78 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (min-width: 450px) and (max-width:769px ) {
+	body{
+		background-color: #444;
+		background-image:none;
+	}
+
+	.container{
+		width: 100%;
+		padding: 0;
+	}
+
+	#timeline{
+		margin-top: 1em;
+	}
+
+
+
+	.blog_list{
+	width: 100%;
+	padding:1.5rem 1.5rem 1.5rem 1rem;
+	background-color: rgba(34,34,34,0.9);
+	margin-bottom: 1em;
+	vertical-align: middle;
+	}
+
+
+	.blog_list span{
+		top:0;
+		left: 0;
+		position: absolute;
+		font-size: 0.875rem;
+		font-size: 14px;
+		font-weight: normal;
+		border-radius:0;
+	}
+
+	.blog_list:hover{
+		background-color: rgba(51,51,51,0.9);
+		border-left: 5px solid #0066ff;
+	}
+
+	.blog_title{
+	position: absolute;
+	top:10%;
+	width: 57%;
+	height: 100%;
+	float: left;
+	margin-left: 0.3em;
+
+	}
+
+	.blog_title h2{
+		width: 100%;
+		font-size: 1.67rem;
+		font-size: 20px;
+	
+	}
+
+	.blog_img{
+	float: right;
+	height:100%;
+	overflow: hidden;
+
+	}
+	.blog_img img{
+		width: 100%;
+		vertical-align:middle;
+
+	}
+}
+
+@media (max-width: 450px) {
 
 	body{
 		background-color: #444;
@@ -66,16 +154,35 @@
 	}
 
 	#timeline{
-		margin-top: 1rem;
+		margin-top: 1em;
 	}
 	.blog_list{
 	width: 100%;
 	padding:0.25rem 0.25rem 0.25rem 0.1rem;
-	background-color: rgba(51,51,51,0.9);
+	background-color: rgba(34,34,34,0.9);
 	margin-bottom: 1em;
 	vertical-align: middle;
 	}
 
+	.blog_list span{
+	top:0;
+	left: 0;
+	position: absolute;
+	font-size: 0.625rem;
+	font-size: 10px;
+	font-weight: normal;
+	border-radius:0;
+	}
+
+	.blog_list:hover{
+	background-color: rgba(51,51,51,0.9);
+	border-left: 5px solid #0066ff;
+	}
+
+	#mytab li{
+		overflow: auto;
+		word-break:none;
+	}
 	#myTab li a{
 		font-size: 0.75rem;
 		font-size: 12px;
@@ -143,14 +250,6 @@
 	position: relative;
 }
 
-
-
-
-
-
-
-
-
 .blog_title h3{
 	text-align: left;
 }
@@ -165,7 +264,7 @@
 
 
 .pagination li a{
-	background-color: rgba(51,51,51,0.9);
+	background-color: rgba(34,34,34,0.9);
 	color: #dddddd;
 	border-color: #444444;
 	font-size: 1rem;
@@ -200,7 +299,7 @@
 
 #latest{
 	width: 100%;
-	background-color: rgba(51,51,51,0.9);
+	background-color: rgba(34,34,34,0.9);
 	padding: 0.5em 1em 0.5em 0.5em;
 }
 #latest h4{
@@ -232,7 +331,7 @@
 
 #tags{
 	width: 100%;
-	background-color: rgba(51,51,51,0.9);
+	background-color: rgba(34,34,34,0.9);
 	padding: 0.5em 1em 0.5em 0.5em;
 	margin-top: 1em;
 }
@@ -276,17 +375,15 @@
 .nav-tabs > li.active > a:focus {
   color: #eee;
   cursor: default;
-  background-color: rgba(51,51,51,0.9);
+  background-color: rgba(34,34,34,0.9);
   border-color: #333;
   border-bottom-color: transparent;
-
-
-
 }
+
 
 .nav-tabs > li >a {
 	color: #dddddd;
-	background-color: rgba(34,34,34,0.9);
+	background-color: rgba(51,51,51,0.9);
 
 }
 

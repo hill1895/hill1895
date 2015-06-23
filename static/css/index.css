@@ -225,7 +225,7 @@
 	.blog_img img{
 		height: 100%;
 		width: 133%;
-		text-align: center;
+		position: relative;
 
 	}
 

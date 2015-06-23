@@ -13,10 +13,10 @@ $(document).ready(function(){
 
 	if($(document).outerWidth()>450)
 	{
-		$(".blog_list").height(blog_info_width*0.2);
+		$(".blog_list").height(blog_info_width*0.15);
 	}
 	else{
-		$(".blog_list").height(blog_info_width*0.35);
+		$(".blog_list").height(blog_info_width*0.3);
 	}
 
 	blog_img_height=$(".blog_img").height();

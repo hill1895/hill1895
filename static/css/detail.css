@@ -34,6 +34,10 @@ word-break:break-all;
 	margin-top: -50px;
 }
 
+#content{
+	word-wrap:break-word;
+}
+
 @media (min-width: 769px) {
 	#content{
 		width: 100%;
@@ -184,4 +188,12 @@ word-break:break-all;
 
 #content a,div,h3,,h2,p,img,pre{
 	position: relative;
+}
+
+#comments{
+	margin-top: 1rem;
+	background-color: rgba(34,34,34,0.9);
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+
 }

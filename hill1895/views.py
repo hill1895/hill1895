@@ -18,11 +18,11 @@ __category1={
 			}
 __category2={
 			'C/C++':'C/C++',
-			'Python/Django':'Python/Django',
+			'Python':'Python',
 			'Website':'Web',
 			'Book':'读书',
 			'Movie':'影评',
-			'Game':'球评',
+			'Sports':'运动',
 			'Tour':'游记',
 			'Joke':'瞎扯'
 			}
@@ -157,7 +157,7 @@ def geek(request):
 	geek_latest,geek_infos,geek_page_range=__get_blog_list(request,blogs_geek)
 	
 	cpp_infos,cpp_page_range=__blog_by_category2(request,blogs_geek,'c/c++')
-	python_infos,python_page_range=__blog_by_category2(request,blogs_geek,'python/django')
+	python_infos,python_page_range=__blog_by_category2(request,blogs_geek,'python')
 	website_infos,website_page_range=__blog_by_category2(request,blogs_geek,'website')
 
 	content={'geek_infos':geek_infos,
@@ -184,7 +184,7 @@ def essay(request):
 	
 	book_infos,book_page_range=__blog_by_category2(request,blogs_essay,'book')
 	movie_infos,movie_page_range=__blog_by_category2(request,blogs_essay,'movie')
-	game_infos,game_page_range=__blog_by_category2(request,blogs_essay,'game')
+	sports_infos,sports_page_range=__blog_by_category2(request,blogs_essay,'sports')
 	tour_infos,tour_page_range=__blog_by_category2(request,blogs_essay,'tour')
 	
 	content={'essay_infos':essay_infos,
@@ -193,8 +193,8 @@ def essay(request):
 			 'book_page_range':book_page_range,
 			 'movie_infos':movie_infos,
 			 'movie_page_range':movie_page_range,
-			 'game_infos':game_infos,
-			 'game_page_range':game_page_range,
+			 'sports_infos':sports_infos,
+			 'sports_page_range':sports_page_range,
 			 'tour_infos':tour_infos,
 			 'tour_page_range':tour_page_range,
 			 'essay_latest':essay_latest,

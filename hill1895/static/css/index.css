@@ -57,6 +57,12 @@
 
 	}
 
+	.blog_title h2{
+		width: 100%;
+		font-size: 1.475rem;
+		font-size: 22px;
+	}
+
 	.blog_img{
 	float: right;
 	height:100%;

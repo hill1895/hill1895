@@ -1,7 +1,7 @@
 
 
 
-{% for blog_info in book_infos %}
+{% for blog_info in sports_infos %}
 	
 {% include "list_style.html" %}
 
@@ -12,22 +12,22 @@
 
 	<ul class="pagination">
 
-	{% if book_infos.has_previous %}
-		<li><a href="?page={{ book_infos.previous_page_number }}">&laquo;</a></li>
+	{% if sports_infos.has_previous %}
+		<li><a href="?page={{ sports_infos.previous_page_number }}">&laquo;</a></li>
 	{% else %}
 		<li class="active"><a>&laquo;</a></li>
 	{% endif %}
 
-	{% for p in book_page_range %}
-      {% ifequal p book_infos.number %}
+	{% for p in sports_page_range %}
+      {% ifequal p sports_infos.number %}
      	 <li class="active"><a>{{p}}</a></li>
       {% else %}
       	<li><a href="?page={{p}}" title="第{{p}}页">{{p}}</a><li>
       {% endifequal %}
     {% endfor %}
 
-	{% if book_infos.has_next %}
-    	<li><a href="?page={{ book_infos.next_page_number }}">&raquo;</a></li>
+	{% if sports_infos.has_next %}
+    	<li><a href="?page={{ sports_infos.next_page_number }}">&raquo;</a></li>
     {% else %}
     	<li class="active"> <a>&raquo;</a></li>
     {% endif %}

@@ -184,6 +184,9 @@ word-break:break-all;
 	*zoom:1;
 }
 
+#content pre{
+	padding:1rem 1rem 1rem 1rem !important;
+}
 
 #comments{
 	margin-top: 1rem;

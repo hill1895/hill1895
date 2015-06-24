@@ -1,6 +1,5 @@
 
 
-
 body .syntaxhighlighter .line
 {
 white-space: pre-wrap !important;
@@ -53,9 +52,6 @@ word-break:break-all;
 		padding-right: 1.5em;
 		padding-bottom: 1em;
 		margin-top: -1.3em;
-		white-space: normal;
-		word-wrap:break-word;
-
 	}
 
 }
@@ -80,8 +76,6 @@ word-break:break-all;
 		overflow: hidden;
 		margin: 0;
 		padding: 0 0.8em 0.8em 0.8em;
-		white-space: normal;
-		word-wrap:break-word;
 
 
 	}
@@ -106,8 +100,6 @@ word-break:break-all;
 		overflow: hidden;
 		margin: 0;
 		padding: 0 0.8em 0.8em 0.8em;
-		white-space: normal;
-		word-wrap:break-word;
 
 	}
 
@@ -180,7 +172,7 @@ word-break:break-all;
 
 
 #content blockquote{
-	border-left: 3px solid #ccc; 
+	border-left: 3px solid #0066ff; 
 	font-size: 1em;
 
 }
@@ -192,9 +184,6 @@ word-break:break-all;
 	*zoom:1;
 }
 
-#content a,div,h3,,h2,p,img,pre{
-	position: relative;
-}
 
 #comments{
 	margin-top: 1rem;

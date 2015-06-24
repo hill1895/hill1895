@@ -9,7 +9,8 @@ body{
 	"Helvetica Neue",
 	Arial,
     Sans-serif;
-    word-break:break-all;
+    white-space: normal !important;
+	word-wrap:break-word !important;
     font-size: 1rem;
     font-size: 16px;
     color: #bbbbbb;

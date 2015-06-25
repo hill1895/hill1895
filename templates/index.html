@@ -72,7 +72,7 @@
    		{% for tag in tags %}
 
    		<a href="{% url 'tag' tag.id %}">
-   			<span class="label label-default">{{ tag.tag }}</span>&nbsp;&nbsp;
+   			<span class="label">{{ tag.tag }}</span>&nbsp;&nbsp;
    		</a>
    	{% endfor %}
    </h5>

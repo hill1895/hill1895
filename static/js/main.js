@@ -29,7 +29,21 @@ $(document).ready(function(){
 		$(".blog_img").width(blog_img_height/0.75);
 	}
 
+	//radom tag colors
+
+	var tag_class=["label-default","label-success","label-primary","label-danger","label-info","label-warning"];
+	$("#tags h5 a span").each(function(){
+		var rand=parseInt(Math.random()*6);
+		$(this).addClass(tag_class[rand]);
+	});
+
+	$(".tag a span").each(function(){
+		var rand=parseInt(Math.random()*6);
+		$(this).addClass(tag_class[rand]);
+	});
 	
+
+	//responsive navigation	
 
 	$("#content img").addClass("img-responsive");
 

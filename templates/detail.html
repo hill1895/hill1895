@@ -9,7 +9,7 @@
    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
    <link rel="stylesheet" type="text/css" href="/static/css/detail.css">
    <link rel="stylesheet" type="text/css" href="/static/css/ueditor/shCoreRDark.css">
-   <link rel="stylesheet" type="text/css" href="/static/css/ueditor/shThemeRDark.css">
+
 
 </head>
 <body>
@@ -71,9 +71,9 @@
 
            </div>
            
-             <h5 class="tag">标签:&nbsp;&nbsp;
+              <h5 class="tag">标签:&nbsp;&nbsp;
                    {% for tag in blog_tags %}
-                      <a href="{% url 'tag' tag.id %}" class="tag_link"><span class="label label-default">{{ tag }}</span></a>&nbsp;&nbsp;
+                      <a href="{% url 'tag' tag.id %}" class="tag_link"><span class="label">{{ tag }}</span></a>&nbsp;&nbsp;
                    {% endfor %}
               </h5>
             
@@ -124,6 +124,10 @@
    <script src="/static/js/ueditor/shCore.js"></script>
    <script src="/static/js/main.js"></script>
    <script type="text/javascript">
+      SyntaxHighlighter.defaults['pad-line-numbers']=true
+      SyntaxHighlighter.defaults['smart-tabs']=true
+      SyntaxHighlighter.defaults['gutter']=true
+      SyntaxHighlighter.defaults['gutter']=["Code"]
       SyntaxHighlighter.all();
    </script>
 

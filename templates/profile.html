@@ -21,8 +21,8 @@
 
 <div class="container">
 
-   <div class="row">
-      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 remove_padding">
+  <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
          <div id="blog_img">
             <img src="{{ profile.head_pic_url }}">
          </div>
@@ -31,11 +31,11 @@
 
 
 
-   <div class="row">
+  <div class="row">
 
-      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 remove_padding">
+      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 
-         <div id="content">
+        <div id="content">
             <h2>{{ profile.title }}</h2>
 
            
@@ -50,39 +50,35 @@
             <h2>{{ updates.title }}</h2>
             <br/>
             {{ updates.content|safe }}
-         </div>
+        </div>
       </div>
 
    </div>
 
-   <div class="row">
-      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 remove_padding">
-         <div id="comments">
+  <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+        <div id="comments">
 
-         <div class="ds-thread" data-thread-key="Profile" data-title="Profile--刘文图熙1895" data-url="http://hill1895.rocks/profile" ></div>
+              <div class="ds-thread" data-thread-key="Profile" data-title="Profile--刘文图熙1895" data-url="http://hill1895.rocks/profile" ></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-          <script type="text/javascript">
-            var duoshuoQuery = {short_name:"hill1895"};
-              (function() {
-                var ds = document.createElement('script');
-                ds.type = 'text/javascript';ds.async = true;
-                ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-                ds.charset = 'UTF-8';
-                (document.getElementsByTagName('head')[0] 
-                 || document.getElementsByTagName('body')[0]).appendChild(ds);
-              })();
-          </script>
-         
-         </div>
-
-
-              
+                <script type="text/javascript">
+                  var duoshuoQuery = {short_name:"hill1895"};
+                    (function() {
+                      var ds = document.createElement('script');
+                      ds.type = 'text/javascript';ds.async = true;
+                      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                      ds.charset = 'UTF-8';
+                      (document.getElementsByTagName('head')[0] 
+                       || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+        </div>       
       </div>
     </div>
 
     <div class="row">
-         <div class="col-md-8 col-md-offset-2 col-sm-12 hidden-xs remove_padding">
+         <div class="col-md-8 col-md-offset-2 col-sm-12 hidden-xs">
                {% include "footer.html" %}
          </div>
     </div>

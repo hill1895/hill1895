@@ -22,7 +22,7 @@
 <div class="container">
 
    <div class="row">
-      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 remove_padding">
+      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
          <div id="blog_img">
             <img src="{{ blog.head_pic_url }}">
          </div>
@@ -44,13 +44,13 @@
 
    <div class="row">
 
-      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 remove_padding">
+      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 
          <div id="content">
             <h2>{{ blog.title }}</h2>
             <h5 class="blog_info">发表时间: {{ blog.pub_time|date:"Y-m-d H:i:s"}}&nbsp;&nbsp;阅读量: {{ blog.page_views }}</h5>
            
-          <div class="share_to">
+
 
                  <h5 class="blog_info"><a href="/{{ category1_url }}">{{ category1 }}&nbsp;/&nbsp;{{ category2 }}</a></h5>
               
@@ -66,10 +66,10 @@
                     </ul>
                     <div class="ds-share-icons-more">
                     </div>
-                  </div>
-            </div>
 
-           </div>
+                  </div>
+
+              </div>
            
               <h5 class="tag">标签:&nbsp;&nbsp;
                    {% for tag in blog_tags %}
@@ -81,14 +81,13 @@
             {{ blog.content|safe }}
          </div>
       </div>
-
    </div>
 
    <div class="row">
-      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 remove_padding">
+      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
          <div id="comments">
 
-         <div class="ds-thread" data-thread-key="blog{{ blog.id }}" data-title="{{ blog.title }}" ></div>
+              <div class="ds-thread" data-thread-key="blog{{ blog.id }}" data-title="{{ blog.title }}" ></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
             <script type="text/javascript">
@@ -103,15 +102,12 @@
           })();
           </script>
          
-         </div>
-
-
-              
+         </div>       
       </div>
     </div>
 
     <div class="row">
-         <div class="col-md-8 col-md-offset-2 col-sm-12 hidden-xs remove_padding">
+         <div class="col-md-8 col-md-offset-2 col-sm-12 hidden-xs">
                {% include "footer.html" %}
          </div>
     </div>

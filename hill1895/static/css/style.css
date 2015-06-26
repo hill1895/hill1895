@@ -24,7 +24,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     overflow: scroll;
-    overflow-x:auto;
+    overflow-x:scroll;
 }
 
 h1{
@@ -216,7 +216,7 @@ a:active{
 	body{
 		background-image:none;
 	}
-	.remove_padding{
+	.col-xs-12{
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
@@ -236,7 +236,7 @@ a:active{
 	body{
 		background-image:none;
 	}
-	.remove_padding{
+	.col-xs-12{
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}

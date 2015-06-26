@@ -45,7 +45,6 @@
                    {% endfor %}
               </h5>
             
-            <br/>
             {{ profile.content|safe }}
             <hr />
             <h2>{{ updates.title }}</h2>
@@ -97,6 +96,7 @@
    <script src="/static/js/main.js"></script>
    <script type="text/javascript">
       SyntaxHighlighter.defaults['smart-tabs']=true
+      SyntaxHighlighter.defaults['auto-links']=true
       SyntaxHighlighter.defaults['gutter']=false
       SyntaxHighlighter.all();
    </script>

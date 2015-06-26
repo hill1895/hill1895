@@ -67,9 +67,10 @@ hr{
 
 	body{
 		background-image: none;
+
 	}
 	.container{
-		padding: 0;
+		padding: 0 !important;
 	}	
 
 
@@ -93,9 +94,10 @@ hr{
 
 	body{
 		background-image: none;
+		padding: 0 !important;
 	}
 	.container{
-		padding: 0;
+		padding: 0 !important;
 	}
 	#content{
 		width: 100%;

@@ -14,14 +14,18 @@ body{
     font-size: 1rem;
     font-size: 16px;
     color: #bbbbbb;
+    width: 100%;
     text-align: left;
-    margin:0;
+    margin:0 !important;
+    padding: 0 !important;
     background-color: #444;
     background-image: url(/static/img/bg.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    overflow: scroll;
+    overflow-x: hidden
 }
 
 h1{
@@ -126,7 +130,7 @@ a:active{
 }
 
 #footer{
-	margin-bottom: 6rem;
+	margin-bottom: 3rem;
 	font-size: 0.875rem;
 	color: #bbb;
 	text-align: center;

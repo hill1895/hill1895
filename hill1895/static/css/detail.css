@@ -191,14 +191,13 @@ hr{
 	*zoom:1;
 }
 
-#content pre{
-	padding:1rem 1rem 1rem 1rem !important;
-}
+
 
 #comments{
 	margin-top: 1rem;
 	background-color: rgba(34,34,34,0.9);
-	padding-left: 1.5em;
-	padding-right: 1.5em;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	margin-bottom: 1rem;
 
 }

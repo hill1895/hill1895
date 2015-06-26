@@ -4,7 +4,7 @@
 from django.shortcuts import render_to_response
 from django import template
 from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
-from hill1895.models import Blog,Tag,Category1,Category2
+from hill1895.models import Blog,Tag,Category1,Category2,Profile,Profile_Tag,Friend,Friend_Tag
 
 # Create your views here.
 
@@ -108,10 +108,12 @@ def index(request):
 	blogs=Blog.objects.all()
 	tags=Tag.objects.all()
 	latest,blog_infos,page_range=__get_blog_list(request,blogs)
+	friends=Friend.objects.all()
 	content={'blog_infos':blog_infos,
 			 'page_range':page_range,
 			 'tags':tags,
-			 'latest':latest}
+			 'latest':latest,
+			 'friends':friends}
 	return render_to_response('index.html',content)
 
 def blog_detail(request,blog_id):
@@ -137,12 +139,13 @@ def tag(request,tag_id):
 	blogs=Blog.objects.filter(tags=get_tag)
 	tags=Tag.objects.all()
 	tag_latest,tag_infos,page_range=__get_blog_list(request,blogs)
-
+	friends=Friend.objects.all()
 	content={'tag_infos':tag_infos,
 			 'page_range':page_range,
 			 'tag_latest':tag_latest,
 			 'get_tag':get_tag,
-			 'tags':tags}
+			 'tags':tags,
+			 'friends':friends}
 
 	return render_to_response('tag.html',content)
 
@@ -160,6 +163,7 @@ def geek(request):
 	python_infos,python_page_range=__blog_by_category2(request,blogs_geek,'python')
 	website_infos,website_page_range=__blog_by_category2(request,blogs_geek,'website')
 
+	friends=Friend.objects.all()
 	content={'geek_infos':geek_infos,
 			 'geek_page_range':geek_page_range,
 			 'cpp_infos':cpp_infos,
@@ -169,7 +173,8 @@ def geek(request):
 			 'website_infos':website_infos,
 			 'website_page_range':website_page_range,
 			 'geek_latest':geek_latest,
-			 'tags':tags}
+			 'tags':tags,
+			 'friends':friends}
 
 	return render_to_response('geek.html',content)
 
@@ -187,6 +192,7 @@ def essay(request):
 	sports_infos,sports_page_range=__blog_by_category2(request,blogs_essay,'sports')
 	tour_infos,tour_page_range=__blog_by_category2(request,blogs_essay,'tour')
 	
+	friends=Friend.objects.all()
 	content={'essay_infos':essay_infos,
 			 'essay_page_range':essay_page_range,
 			 'book_infos':book_infos,
@@ -198,7 +204,8 @@ def essay(request):
 			 'tour_infos':tour_infos,
 			 'tour_page_range':tour_page_range,
 			 'essay_latest':essay_latest,
-			 'tags':tags}
+			 'tags':tags,
+			 'friends':friends}
 
 	return render_to_response('essay.html',content)
 
@@ -212,10 +219,21 @@ def joke(request):
 	
 	joke_latest,joke_infos,joke_page_range=__get_blog_list(request,blogs_joke)
 	
-	
+	friends=Friend.objects.all()
 	content={'joke_infos':joke_infos,
 			 'joke_page_range':joke_page_range,
 			 'joke_latest':joke_latest,
-			 'tags':tags}
+			 'tags':tags,
+			 'friends':friends}
 
 	return render_to_response('joke.html',content)
+
+def profile(request):
+	profile=Profile.objects.get(title='Profile')
+	updates=Profile.objects.get(title='Updates')
+	profile_tags=profile.tags.all()
+	return render_to_response('profile.html',
+		{'profile':profile,
+		 'updates':updates,
+		 'profile_tags':profile_tags
+		})

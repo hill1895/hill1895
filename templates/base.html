@@ -65,7 +65,7 @@
 
 					<div id="latest">
 						<h4>最近文章</h4>
-
+						<hr class="right_hr"/>
 						<ol>
 							{% block lastest_blog%}
 										
@@ -75,11 +75,21 @@
 							
 					<div id="tags">	
 						<h4>标签</h4>
+						<hr class="right_hr" />
 						{% block tags %}
 										
 						{% endblock %}
 									
-					</div>	
+					</div>
+
+					<div id="friends">	
+						<h4>友情链接</h4>
+						<hr class="right_hr"/>
+						{% block friends %}
+										
+						{% endblock %}
+									
+					</div>		
 				</div>					
 			</div>
 		</div>

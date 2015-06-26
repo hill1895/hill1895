@@ -87,7 +87,7 @@ class Friend_Tag(models.Model):
 
 class Friend(models.Model):
 	name=models.CharField(max_length=50,db_index=True,unique=True)
-	friend_url=models.CharField(u'链接',max_length=250)
+	friend_url=models.CharField(u'链接',max_length=250,default='http://')
 	tags=models.ManyToManyField(Friend_Tag,blank=True,verbose_name=u'标签')
 	def __unicode__(self):
 		return self.name

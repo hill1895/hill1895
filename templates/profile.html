@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-Type" content="text/html;charset=utf8"/>
    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<title>{{ blog.title }}</title>
+	<title>Profile--刘文图熙1895</title>
 
    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
@@ -24,61 +24,33 @@
    <div class="row">
       <div class="col-md-8 col-md-offset-2">
          <div id="blog_img">
-            <img src="{{ blog.head_pic_url }}">
+            <img src="{{ profile.head_pic_url }}">
          </div>
       </div>
    </div>
 
-   <div class="row">
-      <div class="col-md-8 col-md-offset-2 col-sm-12 hidden-xs ">
-         <nav class="navbar navbar-inverse" role="navigation" id="navibar">
-               <ul class="nav navbar-nav">
-                  <li><a href="/">首页</a></li>
-                  <li><a href="/geek">技术博客</a></li>
-                  <li><a href="/essay">随笔</a></li>
-                  <li><a href="/joke">瞎扯</a></li>
-               </ul>
-         </nav>
-      </div>
-   </div>
+
 
    <div class="row">
 
       <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 
          <div id="content">
-            <h2>{{ blog.title }}</h2>
-            <h5 class="blog_info">发表时间: {{ blog.pub_time|date:"Y-m-d H:i:s"}}&nbsp;&nbsp;阅读量: {{ blog.page_views }}</h5>
-           
-          <div class="share_to">
+            <h2>{{ profile.title }}</h2>
 
-                 <h5 class="blog_info"><a href="/{{ category1_url }}">{{ category1 }}&nbsp;/&nbsp;{{ category2 }}</a></h5>
-              
-              <div class="ds-share flat" data-thread-key="{{ blog.id }}" data-title="{{ blog.title }}" data-images="{{ blog.head_pic_url }}" data-content="{{ blog.title }}--刘文图熙1895" data-url="http://hill1895.rocks{% url 'blog_detail' blog.id %}">
-                  <div class="ds-share-inline">
-                    <ul  class="ds-share-icons-16">
-                      
-                      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-                      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-                      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-                      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-                      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>  
-                    </ul>
-                    <div class="ds-share-icons-more">
-                    </div>
-                  </div>
-            </div>
-
-           </div>
            
               <h5 class="tag">标签:&nbsp;&nbsp;
-                   {% for tag in blog_tags %}
+                   {% for tag in profile_tags %}
                       <a href="{% url 'tag' tag.id %}" class="tag_link"><span class="label">{{ tag }}</span></a>&nbsp;&nbsp;
                    {% endfor %}
               </h5>
             
             <br/>
-            {{ blog.content|safe }}
+            {{ profile.content|safe }}
+            <hr />
+            <h2>{{ updates.title }}</h2>
+            <br/>
+            {{ updates.content|safe }}
          </div>
       </div>
 
@@ -88,7 +60,7 @@
       <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
          <div id="comments">
 
-         <div class="ds-thread" data-thread-key="blog{{ blog.id }}" data-title="{{ blog.title }}" ></div>
+         <div class="ds-thread" data-thread-key="Profile" data-title="Profile--刘文图熙1895" ></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
             <script type="text/javascript">
@@ -124,10 +96,8 @@
    <script src="/static/js/ueditor/shCore.js"></script>
    <script src="/static/js/main.js"></script>
    <script type="text/javascript">
-      SyntaxHighlighter.defaults['pad-line-numbers']=true
       SyntaxHighlighter.defaults['smart-tabs']=true
-      SyntaxHighlighter.defaults['gutter']=true
-      SyntaxHighlighter.defaults['title']="代码片段:"
+      SyntaxHighlighter.defaults['gutter']=false
       SyntaxHighlighter.all();
    </script>
 

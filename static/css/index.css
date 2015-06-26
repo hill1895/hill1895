@@ -305,6 +305,12 @@
 	float: right;
 }
 
+.right_hr{
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	border-top:1px solid #555;
+}
+
 #latest{
 	width: 100%;
 	background-color: rgba(34,34,34,0.9);
@@ -342,6 +348,7 @@
 	background-color: rgba(34,34,34,0.9);
 	padding: 0.5em 1em 0.5em 0.5em;
 	margin-top: 1em;
+	text-align: center;
 }
 
 #tags h4{
@@ -359,6 +366,29 @@
 	font-size: 12px;
 	line-height: 2.5em;
 	margin-left: 0.5em;
+
+}
+
+#friends{
+	width: 100%;
+	background-color: rgba(34,34,34,0.9);
+	padding: 0.5em 1em 0.5em 0.5em;
+	margin-top: 1em;
+}
+
+#friends h4{
+	text-align: left;
+	vertical-align: middle;
+	margin-left: 0.5em;
+
+}
+
+
+#friends ul li{
+	font-size: 0.875rem;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
 
 }
 

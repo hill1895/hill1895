@@ -8,14 +8,6 @@
 	opacity: 0.8;
 }
 
-.remove_padding{
-	padding-right: 0 !important;
-	padding-left: 0 !important;
-}
-
-
-
-
 #head_img{
 	width: 100%;
 	overflow: hidden;
@@ -89,14 +81,24 @@
 		background-image:none;
 	}
 
+	.remove_padding{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.container{
+		padding: 0 !important;
+
+	}
+
+	.row{
+		margin: 0 !important;
+	}
+
 	#timeline{
 		margin-top: 1em;
 	}
 
-	.remove_padding{
-	padding-right: 0 !important;
-	padding-left: 0 !important;
-}
+
 
 
 	.blog_list{
@@ -160,9 +162,19 @@
 	}
 
 	.remove_padding{
-		padding-right: 0 !important;
 		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
+	.container{
+		padding: 0 !important;
+
+	}
+
+	.row{
+		margin: 0 !important;
+	}
+	
+
 
 	#timeline{
 		margin-top: 1em;

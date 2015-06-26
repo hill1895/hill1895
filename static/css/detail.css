@@ -69,7 +69,14 @@ hr{
 		background-image: none;
 
 	}
+	.container{
+		padding: 0 !important;
 
+		}
+
+	.row{
+		margin: 0 !important;
+	}
 	.remove_padding{
 		padding-right: 0 !important;
 		padding-left: 0 !important;
@@ -96,6 +103,15 @@ hr{
 	body{
 		background-image: none;
 		padding: 0 !important;
+	}
+
+	.container{
+		padding: 0 !important;
+
+	}
+
+	.row{
+		margin: 0 !important;
 	}
 
 	.remove_padding{

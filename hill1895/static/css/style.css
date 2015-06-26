@@ -16,16 +16,13 @@ body{
     color: #bbbbbb;
     width: 100%;
     text-align: left;
-    margin:0 !important;
-    padding: 0 !important;
+    margin:0 auto!important;
+    padding: 0 auto!important;
     background-color: #444;
     background-image: url(/static/img/bg.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    overflow: scroll;
-    overflow-x: hidden
 }
 
 h1{
@@ -146,6 +143,11 @@ a:active{
 #footer ul li:last-child{
 	border-right: none;
 }
+
+.container{
+
+	}
+
 
 
 

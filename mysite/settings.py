@@ -28,7 +28,7 @@ SECRET_KEY = '&1&-t%7=y@yn&7f33-4s)ok#qa%qmckxe!rwv57cqou0x2)+xj'
 DEBUG = False
 
 ALLOWED_HOSTS = ['hill1895.rocks',
-                 'www.hill1895.rocks'
+                 'www.hill1895.rocks',
                  'localhost']
 
 

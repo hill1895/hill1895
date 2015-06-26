@@ -29,6 +29,7 @@ $(document).ready(function(){
 		$(".blog_img").width(blog_img_height/0.75);
 	}
 
+
 	//random tag colors
 
 	var tag_class=["label-default","label-success","label-primary","label-danger","label-info","label-warning"];

@@ -69,11 +69,12 @@ hr{
 		background-image: none;
 
 	}
-	.container{
-		padding: 0 !important;
-	}	
 
-
+	.remove_padding{
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	
 	#content{
 		width: 100%;
 		background-color: rgba(34,34,34,0.9);
@@ -96,9 +97,12 @@ hr{
 		background-image: none;
 		padding: 0 !important;
 	}
-	.container{
-		padding: 0 !important;
+
+	.remove_padding{
+		padding-right: 0 !important;
+		padding-left: 0 !important;
 	}
+
 	#content{
 		width: 100%;
 		background-color: rgba(34,34,34,0.9);

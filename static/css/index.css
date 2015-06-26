@@ -8,6 +8,14 @@
 	opacity: 0.8;
 }
 
+.remove_padding{
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+
+
+
 #head_img{
 	width: 100%;
 	overflow: hidden;
@@ -78,19 +86,17 @@
 
 @media (min-width: 450px) and (max-width:769px ) {
 	body{
-		background-color: #444;
 		background-image:none;
-	}
-
-	.container{
-		width: 100%;
-		padding: 0;
 	}
 
 	#timeline{
 		margin-top: 1em;
 	}
 
+	.remove_padding{
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
 
 
 	.blog_list{
@@ -150,13 +156,12 @@
 @media (max-width: 450px) {
 
 	body{
-		background-color: #444;
 		background-image:none;
 	}
 
-	.container{
-		width: 100%;
-		padding: 0;
+	.remove_padding{
+		padding-right: 0 !important;
+		padding-left: 0 !important;
 	}
 
 	#timeline{

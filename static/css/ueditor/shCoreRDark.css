@@ -120,7 +120,6 @@
 .syntaxhighlighter.nogutter td.code .container textarea, .syntaxhighlighter.nogutter td.code .line {
   padding-left: 1em !important;
   padding-right: 1em !important;
-  background-color: #0c1528 !important;
 }
 .syntaxhighlighter.show {
   display: block !important;

@@ -54,16 +54,13 @@ hr{
 		font-size: 1rem;
 		font-size: 16px;
 		overflow: hidden;
-		padding-top: 1em;
-		padding-left: 1.5em;
-		padding-right: 1.5em;
-		padding-bottom: 1em;
+		padding: 1em 1.5em 1em 1.5em;
 		margin-top:-1px;
 	}
 
 }
 
-@media (min-width: 450px) and (max-width: 769px) {
+@media (min-width: 480px) and (max-width: 769px) {
 
 
 	#content{
@@ -82,7 +79,7 @@ hr{
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
 
 
 

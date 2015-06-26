@@ -76,7 +76,7 @@
 	}
 }
 
-@media (min-width: 450px) and (max-width:769px ) {
+@media (min-width: 480px) and (max-width:769px ) {
 
 
 
@@ -137,7 +137,7 @@
 	}
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
 
 	#timeline{
 		margin-top: 1em;

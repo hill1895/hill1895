@@ -23,7 +23,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    overflow-x:hidden;
+/*    overflow-x:scroll;  */
 }
 
 h1{
@@ -211,35 +211,40 @@ a:active{
 	padding: 5px 15px 5px 25px !important;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
 	body{
 		background-image:none;
 	}
 
-	.container{
-		padding: 0 !important;
-
+	.remove_padding{
+		padding-left: 0;
+		padding-right: 0;
 	}
 
+	.container{
+		padding: 0;
+	}
 	.row{
-		margin: 0 !important;
+		margin: 0;
 	}
 
 }
 
-@media (min-width: 450px) and (max-width:769px ) {
+@media (min-width: 480px) and (max-width:769px ) {
 
 	body{
 		background-image:none;
 	}
 
+	.remove_padding{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	.container{
-		padding: 0 !important;
-
+		padding: 0;
 	}
-
 	.row{
-		margin: 0 !important;
+		margin: 0;
 	}
-
 }

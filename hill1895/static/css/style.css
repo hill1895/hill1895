@@ -211,3 +211,42 @@ a:active{
 	color: #777 !important;
 	padding: 5px 15px 5px 25px !important;
 }
+
+@media (max-width: 450px) {
+	body{
+		background-image:none;
+	}
+	.remove_padding{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.container{
+		padding: 0 !important;
+
+	}
+
+	.row{
+		margin: 0 !important;
+	}
+
+}
+
+@media (min-width: 450px) and (max-width:769px ) {
+
+	body{
+		background-image:none;
+	}
+	.remove_padding{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.container{
+		padding: 0 !important;
+
+	}
+
+	.row{
+		margin: 0 !important;
+	}
+
+}

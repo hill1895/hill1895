@@ -81,18 +81,6 @@
 		background-image:none;
 	}
 
-	.remove_padding{
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-	}
-	.container{
-		padding: 0 !important;
-
-	}
-
-	.row{
-		margin: 0 !important;
-	}
 
 	#timeline{
 		margin-top: 1em;
@@ -161,18 +149,7 @@
 		background-image:none;
 	}
 
-	.remove_padding{
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-	}
-	.container{
-		padding: 0 !important;
 
-	}
-
-	.row{
-		margin: 0 !important;
-	}
 	
 
 

@@ -65,23 +65,6 @@ hr{
 
 @media (min-width: 450px) and (max-width: 769px) {
 
-	body{
-		background-image: none;
-
-	}
-	.remove_padding{
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-	}
-
-	.container{
-		padding: 0 !important;
-
-		}
-
-	.row{
-		margin: 0 !important;
-	}
 
 	#content{
 		width: 100%;
@@ -101,23 +84,6 @@ hr{
 
 @media (max-width: 450px) {
 
-	body{
-		background-image: none;
-		padding: 0 !important;
-	}
-	.remove_padding{
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-	}
-
-	.container{
-		padding: 0 !important;
-
-	}
-
-	.row{
-		margin: 0 !important;
-	}
 
 
 	#content{

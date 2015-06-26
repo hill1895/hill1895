@@ -77,18 +77,12 @@
 }
 
 @media (min-width: 450px) and (max-width:769px ) {
-	body{
-		background-image:none;
-	}
+
 
 
 	#timeline{
 		margin-top: 1em;
 	}
-
-
-
-
 	.blog_list{
 	width: 100%;
 	padding:1.5rem 1.5rem 1.5rem 1rem;
@@ -144,14 +138,6 @@
 }
 
 @media (max-width: 450px) {
-
-	body{
-		background-image:none;
-	}
-
-
-	
-
 
 	#timeline{
 		margin-top: 1em;

@@ -34,7 +34,8 @@ urlpatterns=patterns('hill1895.views',
     url(r'^geek/$','geek',name='geek'),
     url(r'^essay/$','essay',name='essay'),
     url(r'^joke/$','joke',name='joke'),
-    url(r'^profile/$','profile',name='profile')
+    url(r'^profile/$','profile',name='profile'),
+    url(r'^test/$','test',name='test')
     )
 
 urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

@@ -42,7 +42,14 @@ hr{
 	border-top:1px solid #555;
 }
 
-
+#test{
+			width: 100%;
+		background-color: red;
+		padding: 1em 1.5em 1em 1.5em;
+		height: 500px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+}
 
 
 @media (min-width: 769px) {

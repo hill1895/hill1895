@@ -239,12 +239,3 @@ def profile(request):
 		})
 
 
-def test(request):
-	profile=Profile.objects.get(title='Profile')
-	updates=Profile.objects.get(title='Updates')
-	profile_tags=profile.tags.all()
-	return render_to_response('test.html',
-		{'profile':profile,
-		 'updates':updates,
-		 'profile_tags':profile_tags
-		})

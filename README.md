@@ -36,3 +36,6 @@ SyntaxHighlighter来对pre标签中的代码做代码高亮，目前与Bootstrap
 
 #####2015.6.27更新
 1. 修复Bootstrap网格布局padding超出页面的问题
+
+#####2015.6.28更新
+1. 适配iPad

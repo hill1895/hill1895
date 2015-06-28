@@ -216,16 +216,16 @@ a:active{
 		background-image:none;
 	}
 
+
+
 	.container{
-		padding: 0 15px;
-		margin:0;
+		padding: 0 15px 0 15px;
 	}
 
 	.remove_padding{
 		padding-left: 0;
 		padding-right: 0;
 	}
-
 
 }
 
@@ -237,8 +237,7 @@ a:active{
 
 
 	.container{
-		padding: 0 15px;
-		margin:0;
+		padding: 0 15px 0 15px;
 	}
 
 	.remove_padding{
@@ -254,8 +253,4 @@ a:active{
 		background-image:none;
 	}
 
-	.container{
-		padding: 0 15px;
-		margin:0;
-	}
 }

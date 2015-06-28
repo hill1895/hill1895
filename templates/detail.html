@@ -26,25 +26,18 @@
          <div id="blog_img">
             <img src="{{ blog.head_pic_url }}">
          </div>
-      </div>
-   </div>
 
-   <div class="row">
-      <div class="col-md-8 col-md-offset-2 col-sm-12 hidden-xs remove_padding">
-         <nav class="navbar navbar-inverse" role="navigation" id="navibar">
-               <ul class="nav navbar-nav">
-                  <li><a href="/">首页</a></li>
-                  <li><a href="/geek">技术博客</a></li>
-                  <li><a href="/essay">随笔</a></li>
-                  <li><a href="/joke">瞎扯</a></li>
-               </ul>
-         </nav>
-      </div>
-   </div>
+         <div class="hidden-xs">
+           <nav class="navbar navbar-inverse" role="navigation" id="navibar">
+                 <ul class="nav navbar-nav">
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/geek">技术博客</a></li>
+                    <li><a href="/essay">随笔</a></li>
+                    <li><a href="/joke">瞎扯</a></li>
+                 </ul>
+           </nav>
+       </div>
 
-   <div class="row">
-
-      <div class="col-md-8 col-md-offset-2 col-sm-12 remove_padding">
 
          <div id="content">
             <h2>{{ blog.title }}</h2>
@@ -61,8 +54,7 @@
                       <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
                       <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
                       <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-                      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-                      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>  
+                      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li> 
                     </ul>
                     <div class="ds-share-icons-more">
                     </div>
@@ -80,36 +72,29 @@
             <br/>
             {{ blog.content|safe }}
          </div>
-      </div>
-   </div>
 
-   <div class="row">
-      <div class="col-md-8 col-md-offset-2 col-sm-12 remove_padding">
+
          <div id="comments">
 
               <div class="ds-thread" data-thread-key="blog{{ blog.id }}" data-title="{{ blog.title }}" ></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
             <script type="text/javascript">
-            var duoshuoQuery = {short_name:"hill1895"};
-          (function() {
-              var ds = document.createElement('script');
-              ds.type = 'text/javascript';ds.async = true;
-              ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-              ds.charset = 'UTF-8';
-              (document.getElementsByTagName('head')[0] 
-               || document.getElementsByTagName('body')[0]).appendChild(ds);
+             var duoshuoQuery = {short_name:"hill1895"};
+               (function() {
+                  var ds = document.createElement('script');
+                  ds.type = 'text/javascript';ds.async = true;
+                  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                  ds.charset = 'UTF-8';
+                  (document.getElementsByTagName('head')[0] 
+                   || document.getElementsByTagName('body')[0]).appendChild(ds);
           })();
           </script>
          
          </div>       
-      </div>
-    </div>
 
-    <div class="row">
-         <div class="col-md-8 col-md-offset-2 col-sm-12 hidden-xs remove_padding">
+          <div class="hidden-xs">
                {% include "footer.html" %}
-         </div>
+          </div>
+
     </div>
 	
 </div>

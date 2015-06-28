@@ -38,7 +38,7 @@ $(document).ready(function(){
 		$(this).addClass(tag_class[rand]);
 	});
 
-	$(".tag a span").each(function(){
+	$(".tag span").each(function(){
 		var rand=parseInt(Math.random()*6);
 		$(this).addClass(tag_class[rand]);
 	});

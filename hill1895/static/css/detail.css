@@ -84,6 +84,10 @@ hr{
 #content p{
 	font-size: 1em;
 }
+#content img{
+	text-align: center;
+	max-width: 100%;
+}
 
 .blog_info{
 	color: #666666;
@@ -152,9 +156,9 @@ hr{
 	font-size: 20px;
 	}
 
-	.tag a span{
+	.tag span{
 	font-weight: normal;
-	font-size: 0.75em;
+	font-size: 0.875em;
 	line-height: 2.5em;
 	}
 }
@@ -172,6 +176,11 @@ hr{
 		margin: 0;
 		padding: 0 0.8em 0.8em 0.8em;
 	}
+	.tag span{
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 2.5em;
+	}
 
 }
 
@@ -188,6 +197,12 @@ hr{
 		padding: 0 0.8em 0.8em 0.8em;
 	}
 
+	.tag span{
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 2.5em;
+	}
+
 
 }
 
@@ -202,6 +217,11 @@ hr{
 		overflow: hidden;
 		padding: 1em 1.5em 1em 1.5em;
 		margin-top:-1px;
+	}
+	.tag span{
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 2.5em;
 	}
 
 }

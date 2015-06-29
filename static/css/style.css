@@ -33,6 +33,7 @@ h1{
 .h1_logo{
 	position: absolute;
 	margin-top: 0;
+	margin-left: 0.5em;
 	top:5px;
 }
 
@@ -102,10 +103,7 @@ a:active{
 
 }
 
-#logo{
-	margin-left: 1em;
 
-}
 
 .navbar-nav li a{
 	font-size: 0.875rem;

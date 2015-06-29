@@ -85,7 +85,6 @@ hr{
 	font-size: 1em;
 }
 #content img{
-	text-align: center;
 	max-width: 100%;
 }
 
@@ -112,6 +111,7 @@ hr{
 #content blockquote{
 	border-left: 3px solid #3366cc; 
 	font-size: 1em;
+	background-color: rgba(51,51,60,0.9);
 
 }
 @media \0screen\,screen\9
@@ -138,6 +138,10 @@ hr{
 	margin-left: 0 !important;
 	margin-right: 0 !important;
 
+}
+
+.center_align{
+	text-align: center !important;
 }
 
 

@@ -48,7 +48,11 @@ $(document).ready(function(){
 
 	//responsive navigation	
 
-	$("#content img").addClass("img-responsive");
+	$("#content p img").addClass("img-responsive");
+
+	$("#content img").parent().addClass("center_align");
+
+	$("#content embed").parent().addClass("center_align");
 
 	var breakpoint = 0;
 

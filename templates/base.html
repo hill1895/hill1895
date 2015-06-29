@@ -1,12 +1,19 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+	<title>{% block title %}{% endblock %}</title>
+	{% block seo %}
+	<meta name="description" content="该网站为刘文图熙1895的个人博客网站，用于记录学习和生活的心得。技术博客用于记录C/C++, Python, Web等技术的学习和使用心得,随笔用于记录自己读书, 观影, 运动, 旅行的心得体会,瞎扯用于吐槽" />
+	<meta name="keywords" content="刘文图熙1895,个人博客,编程,Geek" />
+	{% endblock %}
+	<meta name="robots" content="index,follow" />
+	<meta name="author" content="刘文图熙1895" />
 	<meta http-equiv="content-Type" content="text/html;charset=utf8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 	<meta name="baidu-site-verification" content="lplLbq63Lo" />
-	<meta name="keywords" content="刘文图熙1895,个人博客,Geek" />
 
-	<title>{% block title %}{% endblock %}</title>
+
+
 	
 	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
@@ -64,7 +71,7 @@
 				<div id="right_column">
 
 					<div id="latest">
-						<h4>最近文章</h4>
+						<h4><span class="glyphicon glyphicon-time"></span>&nbsp;最近文章</h4>
 						<hr class="right_hr"/>
 						<ol>
 							{% block lastest_blog%}
@@ -74,7 +81,7 @@
 					</div>
 							
 					<div id="tags">	
-						<h4>标签</h4>
+						<h4><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签</h4>
 						<hr class="right_hr" />
 						{% block tags %}
 										
@@ -83,7 +90,7 @@
 					</div>
 
 					<div id="friends">	
-						<h4>友情链接</h4>
+						<h4><span class="glyphicon glyphicon-heart"></span>&nbsp;友情链接</h4>
 						<hr class="right_hr"/>
 						{% block friends %}
 										

@@ -122,7 +122,11 @@ hr{
 	*zoom:1;
 }
 
-
+#content h1{
+	font-size: 1.5rem;
+	font-size: 24px;
+	color:#eee;
+	}
 
 #comments{
 	width: 100%;
@@ -151,7 +155,7 @@ hr{
 
 	}
 
-	#content h2{
+	#content h1{
 	font-size: 1.25rem;
 	font-size: 20px;
 	}

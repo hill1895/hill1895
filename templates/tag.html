@@ -2,10 +2,14 @@
 
 {% block title %}
 
-{{ get_tag.tag }}-文章列表
+{{ get_tag.tag }}_文章列表_刘文图熙1895
 
 {% endblock %}
 
+{% block seo %}
+ <meta name="description" content="{{ get_tag.tag }}的文章列表" />
+  <meta name="keywords" content="刘文图熙1895,个人博客,{{ get_tag.tag }}" />
+{% endblock %}
 
 {% load hill1895_extras %}
 {% block title_list %}
@@ -13,7 +17,7 @@
 <ul id="myTab" class="nav nav-tabs">
    <li class="active">
       <a href="#home" data-toggle="tab">
-         {{ get_tag.tag }}
+        <span class="glyphicon glyphicon-tag"></span>&nbsp; {{ get_tag.tag }}
       </a>
    </li>
 </ul>	
@@ -67,4 +71,10 @@
    	<h5>
    		{% include "tag_info.html" %}
    </h5>
+{% endblock %}
+
+{% block friends %}
+  
+  {% include "friends.html" %}       
+
 {% endblock %}

@@ -36,11 +36,13 @@ $(document).ready(function(){
 	$("#tags h5 a span").each(function(){
 		var rand=parseInt(Math.random()*6);
 		$(this).addClass(tag_class[rand]);
+
 	});
 
 	$(".tag span").each(function(){
 		var rand=parseInt(Math.random()*6);
 		$(this).addClass(tag_class[rand]);
+		$(".tag span.glyphicon").removeClass(tag_class[rand]);
 	});
 	
 

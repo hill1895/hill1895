@@ -30,6 +30,11 @@ h1{
 	font-size: 2rem;
 	font-size: 32px;
 }
+.h1_logo{
+	position: absolute;
+	margin-top: 0;
+	top:5px;
+}
 
 h2{
 	font-size:1.5rem;
@@ -98,7 +103,6 @@ a:active{
 }
 
 #logo{
-	margin-top: 0.4em;
 	margin-left: 1em;
 
 }
@@ -253,4 +257,10 @@ a:active{
 		background-image:none;
 	}
 
+}
+
+@-moz-document 
+url-prefix()
+{    
+	.divh96{height:90px;} 
 }

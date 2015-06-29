@@ -182,6 +182,9 @@
 .nav-tabs{
 	border-bottom: none;
 }
+.nav-tabs > li{
+	margin-bottom: 0;
+}
 
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,

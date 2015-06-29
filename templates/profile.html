@@ -28,10 +28,11 @@
 
 
         <div id="content">
-            <h2>{{ profile.title }}</h2>
+            <h1>{{ profile.title }}</h1>
 
            
-              <h5 class="tag">标签:&nbsp;&nbsp;
+              <h5 class="tag">
+                 <span class="glyphicon glyphicon-tags" ></span>&nbsp;
                    {% for tag in profile_tags %}
                      <span class="label">{{ tag }}</span>&nbsp;&nbsp;
                    {% endfor %}
@@ -57,8 +58,8 @@
                   ds.charset = 'UTF-8';
                   (document.getElementsByTagName('head')[0] 
                    || document.getElementsByTagName('body')[0]).appendChild(ds);
-          })();
-          </script>
+                })();
+            </script>
          
          </div>     
      

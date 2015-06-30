@@ -369,6 +369,28 @@
 		vertical-align:middle;
 
 	}
+
+	#latest ol li{
+		font-size: 1rem;
+		font-size: 16px;
+		text-align: left;
+
+	}
+	#tags h5 span{
+		font-weight: normal;
+		font-size: 0.875rem;
+		font-size: 14px;
+		line-height: 2.5em;
+		margin-left: 0.5em;
+
+	}
+	#friends ul li{
+		font-size: 1rem;
+		font-size: 16px;
+		text-align: left;
+		list-style: circle;
+
+	}
 }
 
 @media (min-width: 768px) and (max-width:979px ) {
@@ -398,12 +420,12 @@
 	}
 
 	.blog_title{
-	position: absolute;
-	top:5%;
-	width: 65%;
-	height: 100%;
-	float: left;
-	margin-left: 0.3em;
+		position: absolute;
+		top:5%;
+		width: 65%;
+		height: 100%;
+		float: left;
+		margin-left: 0.3em;
 
 	}
 

@@ -14,10 +14,12 @@
 
 
 
-	
+	{% load compress %}
+	{% compress css %}
 	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	{% endcompress %}
 
 
 
@@ -90,7 +92,7 @@
 					</div>
 
 					<div id="friends">	
-						<h4><span class="glyphicon glyphicon-heart"></span>&nbsp;友情链接</h4>
+						<h4><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;友情链接</h4>
 						<hr class="right_hr"/>
 						{% block friends %}
 										
@@ -112,9 +114,10 @@
 	<div id="return_top" class="hidden-sm hidden-xs"><a href="#"><img src="/static/img/return_top.png" /></a>
 	</div>
 
-
+	{% compress js %}
 	<script src="/static/js/jquery-1.11.3.min.js"></script>
 	<script src="/static/js/bootstrap/bootstrap.min.js"></script>
 	<script src="/static/js/main.js"></script>
+	{% endcompress%}
 </body>
 </html>

@@ -27,6 +27,9 @@ SECRET_KEY = '&1&-t%7=y@yn&7f33-4s)ok#qa%qmckxe!rwv57cqou0x2)+xj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+COMPRESS_ENABLED=True
+COMPRESS_OFFLINE=True
+
 ALLOWED_HOSTS = ['hill1895.rocks',
                  'www.hill1895.rocks',
                  'localhost']
@@ -44,6 +47,7 @@ INSTALLED_APPS = (
     #'django.contrib.sites',
     'DjangoUeditor',
     'hill1895',
+    'compressor',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -96,6 +100,11 @@ DATABASES = {
         'HOST':'',
         'PORT':'3306'    }
 }
+
+STATICFILES_FINDERS = (
+        'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+        'django.contrib.staticfiles.finders.FileSystemFinder',
+        'compressor.finders.CompressorFinder',)
 
 
 # Internationalization

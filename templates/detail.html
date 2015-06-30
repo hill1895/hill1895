@@ -14,11 +14,13 @@
   <meta name="robots" content="index,follow" />
   <meta name="author" content="刘文图熙1895" />
 
-
+  {% load compress %}
+  {% compress css %}
    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
    <link rel="stylesheet" type="text/css" href="/static/css/detail.css">
    <link rel="stylesheet" type="text/css" href="/static/css/ueditor/shCoreRDark.css">
+  {% endcompress %}
 
 
 </head>
@@ -113,11 +115,12 @@
   <div id="return_top" class="hidden-sm hidden-xs"><a href="#"><img src="/static/img/return_top.png" /></a>
   </div>
 
-
+  {% compress js %}
 	<script src="/static/js/jquery-1.11.3.min.js"></script>
 	<script src="/static/js/bootstrap/bootstrap.min.js"></script>
    <script src="/static/js/ueditor/shCore.js"></script>
    <script src="/static/js/main.js"></script>
+  {% endcompress%}
    <script type="text/javascript">
       SyntaxHighlighter.defaults['pad-line-numbers']=true
       SyntaxHighlighter.defaults['smart-tabs']=true

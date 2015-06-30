@@ -282,3 +282,11 @@ url-prefix()
 {    
 	.divh96{height:90px;} 
 }
+
+#return_top{
+	position: fixed;
+	display: none;
+	bottom:3rem;
+	right: 3rem;
+	z-index: 5;
+}

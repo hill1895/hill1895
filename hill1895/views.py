@@ -123,13 +123,14 @@ def blog_detail(request,blog_id):
 	blog_tags=blog.tags.all()
 	category1=blog.category1.category_1
 	category2=blog.category2.category_2
+	category2_url=category1.lower()+'#'+category2
 	return render_to_response('detail.html',
 		{'blog':blog,
 		'blog_tags':blog_tags,
 		'category1':__category1[category1],
 		'category2':__category2[category2],
 		'category1_url':category1.lower(),
-		'category2_url':category2.lower()
+		'category2_url':category2_url
 		})
 
 

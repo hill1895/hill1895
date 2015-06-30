@@ -42,8 +42,10 @@ SyntaxHighlighter来对pre标签中的代码做代码高亮，目前与Bootstrap
 
 #####2015.6.28更新
 1. SEO 优化
+
 #####2015.6.30更新
 1. 设计404页面
+
 #####2015.7.5更新
 1. 使用Django_compressor合并static文件，使用nginx的gzip压缩静态文件，大幅提高访问速度。
 2. robots.txt

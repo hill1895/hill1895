@@ -21,6 +21,7 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
 from django.views.generic.base import RedirectView
+from django.views.generic import TemplateView
 from hill1895 import views
 
 
@@ -34,7 +35,9 @@ urlpatterns=patterns('hill1895.views',
     url(r'^geek/$','geek',name='geek'),
     url(r'^essay/$','essay',name='essay'),
     url(r'^joke/$','joke',name='joke'),
-    url(r'^profile/$','profile',name='profile')
-    )
+    url(r'^profile/$','profile',name='profile'),
+    url(r'^robots\.txt$',TemplateView.as_view(template_name= 'robots.txt', content_type='text/plain')),
+)
+    
 
 urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

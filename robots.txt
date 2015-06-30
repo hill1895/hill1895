@@ -1,0 +1,11 @@
+User-Agent: *
+Allow: /
+Allow: /blog_detail/blog_*$
+Allow: /joke
+Allow: /profile
+Allow: /essay
+Allow: /geek
+Disallow: /static
+Disallow: /admin
+Disallow: /templates
+

@@ -22,6 +22,10 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.views.generic.base import RedirectView
 from django.views.generic import TemplateView
+from django.contrib.sitemaps.views import sitemap,index
+from django.contrib.sitemaps import views
+from hill1895.sitemap import sitemaps
+from hill1895.models import Blog,Tag
 from hill1895 import views
 
 
@@ -29,7 +33,7 @@ urlpatterns=patterns('hill1895.views',
 	url(r'^admin/', include(admin.site.urls)),
 	url(r'^ueditor/',include('DjangoUeditor.urls')),
     url(r'^favicon.ico$',RedirectView.as_view(url='/static/img/favicon.ico')),
-	url(r'^$','index'),
+	url(r'^$','index',name='index'),
     url(r'^blog_detail/blog_(?P<blog_id>\d+)/$','blog_detail',name='blog_detail'),
 	url(r'^tag_(?P<tag_id>\d+)/$','tag',name='tag'),
     url(r'^geek/$','geek',name='geek'),
@@ -37,6 +41,8 @@ urlpatterns=patterns('hill1895.views',
     url(r'^joke/$','joke',name='joke'),
     url(r'^profile/$','profile',name='profile'),
     url(r'^robots\.txt$',TemplateView.as_view(template_name= 'robots.txt', content_type='text/plain')),
+    url(r'^sitemap\.xml$',index,{'sitemaps': sitemaps}),
+    url(r'^sitemap-(?P<section>.+)\.xml$', sitemap, {'sitemaps': sitemaps}),
 )
     
 

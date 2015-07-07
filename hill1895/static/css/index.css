@@ -318,6 +318,10 @@
 		margin-bottom: 0.8rem;
 	}
 
+	#latest ol li:first-child{
+		margin-top: 0.8rem;
+	}
+
 	#latest ol li:last-child{
 		border-bottom: none;
 	}
@@ -330,6 +334,10 @@
 		border-bottom: 1px solid #444;
 		padding-bottom: 0.8rem;
 		margin-bottom: 0.8rem;
+	}
+
+	#friends ul li:first-child{
+		margin-top: 0.8rem;
 	}
 
 	#friends ul li:last-child{
@@ -412,6 +420,10 @@
 		margin-bottom: 0.8rem;
 	}
 
+	#latest ol li:first-child{
+		margin-top: 0.8rem;
+	}
+
 	#latest ol li:last-child{
 		border-bottom: none;
 	}
@@ -439,7 +451,9 @@
 		padding-bottom: 0.8rem;
 		margin-bottom: 0.8rem;
 	}
-
+	#friends ul li:first-child{
+		margin-top: 0.8rem;
+	}
 	#friends ul li:last-child{
 		border-bottom: none;
 	}

@@ -141,6 +141,13 @@ a:active{
 	margin-right: 1em;
 }
 
+#search{
+	position: fixed;
+	top:10px;
+	height: 30px;
+	text-align: right;
+}
+
 #footer{
 	margin-bottom: 3rem;
 	font-size: 0.875rem;
@@ -258,6 +265,11 @@ a:active{
 		padding-right: 0;
 	}
 
+	#search{
+		width: 30px;
+		right:5rem;
+	}
+
 }
 
 @media (min-width: 481px) and (max-width:767px ) {
@@ -294,12 +306,30 @@ a:active{
 		padding-right: 0;
 	}
 
+	#search{
+		width: 30px;
+		right:5rem;
+	}
+
 }
 
 @media (min-width: 768px) and (max-width:979px ) {
 
 	body{
 		background-image:none;
+	}
+
+	#search{
+		width: 350px;
+		left: 4rem;
+	}
+
+}
+
+@media (min-width: 980px) {
+	#search{
+		width: 350px;
+		left: 5rem;
 	}
 
 }

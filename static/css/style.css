@@ -146,6 +146,7 @@ a:active{
 	top:10px;
 	height: 30px;
 	text-align: right;
+	z-index: 8;
 }
 
 #footer{
@@ -266,8 +267,10 @@ a:active{
 	}
 
 	#search{
-		width: 30px;
-		right:5rem;
+		width: 45px;
+		right:4rem;
+		padding-top: 5px;
+		padding-left: 10px;
 	}
 
 }
@@ -307,8 +310,10 @@ a:active{
 	}
 
 	#search{
-		width: 30px;
-		right:5rem;
+    	width: 45px;
+    	right: 4rem;
+    	padding-top: 5px;
+    	padding-left: 10px;
 	}
 
 }
@@ -320,8 +325,10 @@ a:active{
 	}
 
 	#search{
-		width: 350px;
-		left: 4rem;
+	    width: 45px;
+	    left: 24rem;
+	    padding-top: 5px;
+	    padding-left: 10px;
 	}
 
 }
@@ -329,7 +336,7 @@ a:active{
 @media (min-width: 980px) {
 	#search{
 		width: 350px;
-		left: 5rem;
+		right: 25rem;
 	}
 
 }

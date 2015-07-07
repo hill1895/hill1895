@@ -84,7 +84,7 @@
 .right_hr{
 	margin-top: 0;
 	margin-bottom: 0.5rem;
-	border-top:1px solid #555;
+	border-top:2px solid #555;
 }
 
 #latest{
@@ -308,6 +308,34 @@
 		font-size: 12px;
 	}
 
+	#latest ol{
+		margin-right: 1rem;
+	}
+
+	#latest ol li{
+		border-bottom: 1px solid #444;
+		padding-bottom: 0.4rem;
+		margin-bottom: 0.4rem;
+	}
+
+	#latest ol li:last-child{
+		border-bottom: none;
+	}
+
+	#friends ul{
+		margin-right: 2rem;
+	}
+
+	#friends ul li{
+		border-bottom: 1px solid #444;
+		padding-bottom: 0.4rem;
+		margin-bottom: 0.4rem;
+	}
+
+	#friends ul li:last-child{
+		border-bottom: none;
+	}
+
 
 }
 
@@ -371,12 +399,23 @@
 
 	}
 
+	#latest ol{
+		margin-right: 2rem;
+	}
+
 	#latest ol li{
 		font-size: 1rem;
 		font-size: 16px;
 		text-align: left;
-
+		border-bottom: 1px solid #444;
+		padding-bottom: 0.4rem;
+		margin-bottom: 0.4rem;
 	}
+
+	#latest ol li:last-child{
+		border-bottom: none;
+	}
+
 	#tags h5 span{
 		font-weight: normal;
 		font-size: 0.875rem;
@@ -385,13 +424,26 @@
 		margin-left: 0.5em;
 
 	}
+
+
+	#friends ul{
+		margin-right: 2rem;
+	}
+
 	#friends ul li{
 		font-size: 1rem;
 		font-size: 16px;
 		text-align: left;
 		list-style: circle;
-
+		border-bottom: 1px solid #444;
+		padding-bottom: 0.4rem;
+		margin-bottom: 0.4rem;
 	}
+
+	#friends ul li:last-child{
+		border-bottom: none;
+	}
+
 }
 
 @media (min-width: 768px) and (max-width:979px ) {

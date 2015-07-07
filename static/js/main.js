@@ -61,6 +61,7 @@ $(document).ready(function(){
                 return false;  
             });  
 	
+	$("#ds-thread #ds-reset .ds-replybox .ds-avatar img").addClass("img-circle");
 
 	//responsive navigation	
 

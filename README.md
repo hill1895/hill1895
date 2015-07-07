@@ -52,3 +52,6 @@ SyntaxHighlighter来对pre标签中的代码做代码高亮，目前与Bootstrap
 
 #####2015.7.6更新
 1. 使用django.contrib.sitemaps自动生成sitemap
+
+#####2015.7.8更新
+1. 添加百度站内搜索插件

@@ -147,6 +147,7 @@ a:active{
 	height: 30px;
 	text-align: right;
 	z-index: 8;
+	
 }
 
 #footer{
@@ -326,14 +327,24 @@ a:active{
 
 	#search{
 	    width: 45px;
-	    left: 24rem;
+	    right: 22rem;
 	    padding-top: 5px;
 	    padding-left: 10px;
 	}
 
 }
 
-@media (min-width: 980px) {
+@media (min-width: 980px) and (max-width:1199px ) {
+	#search{
+	    width: 45px;
+	    right: 22rem;
+	    padding-top: 5px;
+	    padding-left: 10px;
+	}
+
+}
+
+@media (min-width: 1200px) {
 	#search{
 		width: 350px;
 		right: 25rem;

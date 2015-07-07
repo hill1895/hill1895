@@ -231,6 +231,8 @@ a:active{
 	}
 	.navbar-nav li{
 		border-bottom: 2px solid #333;
+		padding-bottom: 0.4rem;
+		margin-bottom: 0.4rem;
 	}
 	.navbar-nav li:last-child{
 	border-bottom:none;
@@ -238,7 +240,13 @@ a:active{
 
 	ul.dropdown-menu li{
 		border-bottom: 1px solid #333;
+		padding-bottom: 0.3rem;
+		margin-bottom: 0.3rem;
 	} 
+	ul.dropdown-menu li:last-child{
+	border-bottom:none;
+	margin-bottom: 0;
+	}
 
 
 	.container{
@@ -259,6 +267,8 @@ a:active{
 	}
 	.navbar-nav li{
 		border-bottom: 2px solid #333;
+		padding-bottom: 0.4rem;
+		margin-bottom: 0.4rem;
 	}
 	.navbar-nav li:last-child{
 	border-bottom:none;
@@ -266,7 +276,14 @@ a:active{
 
 	ul.dropdown-menu li{
 		border-bottom: 1px solid #333;
+		padding-bottom: 0.3rem;
+		margin-bottom: 0.3rem;
 	} 
+
+	ul.dropdown-menu li:last-child{
+	border-bottom:none;
+	margin-bottom: 0;
+	}
 
 	.container{
 		padding: 0 15px 0 15px;

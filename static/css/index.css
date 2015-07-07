@@ -314,8 +314,8 @@
 
 	#latest ol li{
 		border-bottom: 1px solid #444;
-		padding-bottom: 0.4rem;
-		margin-bottom: 0.4rem;
+		padding-bottom: 0.8rem;
+		margin-bottom: 0.8rem;
 	}
 
 	#latest ol li:last-child{
@@ -328,8 +328,8 @@
 
 	#friends ul li{
 		border-bottom: 1px solid #444;
-		padding-bottom: 0.4rem;
-		margin-bottom: 0.4rem;
+		padding-bottom: 0.8rem;
+		margin-bottom: 0.8rem;
 	}
 
 	#friends ul li:last-child{
@@ -408,8 +408,8 @@
 		font-size: 16px;
 		text-align: left;
 		border-bottom: 1px solid #444;
-		padding-bottom: 0.4rem;
-		margin-bottom: 0.4rem;
+		padding-bottom: 0.8rem;
+		margin-bottom: 0.8rem;
 	}
 
 	#latest ol li:last-child{
@@ -436,8 +436,8 @@
 		text-align: left;
 		list-style: circle;
 		border-bottom: 1px solid #444;
-		padding-bottom: 0.4rem;
-		margin-bottom: 0.4rem;
+		padding-bottom: 0.8rem;
+		margin-bottom: 0.8rem;
 	}
 
 	#friends ul li:last-child{

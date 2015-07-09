@@ -53,9 +53,8 @@
 
          <div id="content">
             <h1>{{ blog.title }}</h1>
-            <h5 class="blog_info">发表时间: {{ blog.pub_time|date:"Y-m-d H:i:s"}}&nbsp;&nbsp;阅读量: {{ blog.page_views }}</h5>
+            <h5 class="blog_info"><a href="/{{ category1_url }}">{{ category1 }}&nbsp;/&nbsp;{{ category2 }}</a>&nbsp;&nbsp; {{ blog.pub_time|date:"Y-m-d H:i:s"}}&nbsp;&nbsp;阅读量: {{ blog.page_views }}</h5>
            
-                 <h5 class="blog_info"><a href="/{{ category1_url }}">{{ category1 }}&nbsp;/&nbsp;{{ category2 }}</a></h5>
 
                   <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more">分享到：</a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a></div>
                   <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"分享 刘文图熙1895 的文章 「 {{ blog.title}} 」 --刘文图熙1895","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{"bdSize":16},"image":{"viewList":["weixin","tsina","qzone"],"viewText":"分享到：","viewSize":"24"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","tsina","qzone"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>

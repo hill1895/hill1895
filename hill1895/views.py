@@ -60,7 +60,7 @@ def __get_blog_info(objs):
 	return blog_info
 
 #pagination
-def __my_pagination(request,objs,display_num=6,after_range=6,before_range=5):
+def __my_pagination(request,objs,display_num=10,after_range=10,before_range=9):
 	paginator=Paginator(objs,display_num)
 
 	try:

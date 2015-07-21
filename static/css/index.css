@@ -569,6 +569,9 @@
 		vertical-align:middle;
 
 	}
+	#latest ol li{
+		padding-bottom: 0.3rem;
+	}
 }
 
 @media (min-width: 1120px) {
@@ -621,5 +624,9 @@
 		width: 100%;
 		vertical-align:middle;
 
+	}
+
+	#latest ol li{
+		padding-bottom: 0.3rem;
 	}
 }

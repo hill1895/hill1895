@@ -10,6 +10,7 @@ word-break:break-all;
 #blog_img{
 	width: 100%;
 	overflow: hidden;
+
 }
 
 #blog_img img{
@@ -166,6 +167,10 @@ hr{
 	font-size: 0.875em;
 	line-height: 2.5em;
 	}
+
+	#blog_img{
+	margin-top: 50px;
+	}
 }
 
 
@@ -185,6 +190,9 @@ hr{
 		font-weight: normal;
 		font-size: 1em;
 		line-height: 2.5em;
+	}
+	#blog_img{
+	margin-top: 50px;
 	}
 
 }
@@ -208,6 +216,10 @@ hr{
 		line-height: 2.5em;
 	}
 
+	#blog_img{
+	margin-top: 50px;
+	}
+
 
 }
 
@@ -227,6 +239,10 @@ hr{
 		font-weight: normal;
 		font-size: 1em;
 		line-height: 2.5em;
+	}
+
+	#blog_img{
+	margin-top: 0px;
 	}
 
 }

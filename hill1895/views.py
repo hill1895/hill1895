@@ -17,7 +17,7 @@ __category1={
 			'Joke':'瞎扯'
 			}
 __category2={
-			'C/C++':'C/C++',
+			'C++/Java':'C++/Java',
 			'Python':'Python',
 			'Website':'Web',
 			'Book':'读书',
@@ -160,7 +160,7 @@ def geek(request):
 	
 	geek_latest,geek_infos,geek_page_range=__get_blog_list(request,blogs_geek)
 	
-	cpp_infos,cpp_page_range=__blog_by_category2(request,blogs_geek,'c/c++')
+	cpp_infos,cpp_page_range=__blog_by_category2(request,blogs_geek,'C++/Java')
 	python_infos,python_page_range=__blog_by_category2(request,blogs_geek,'python')
 	website_infos,website_page_range=__blog_by_category2(request,blogs_geek,'website')
 

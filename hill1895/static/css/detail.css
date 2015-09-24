@@ -79,9 +79,7 @@ hr{
 }
 
 
-#content p{
-	font-size: 1em;
-}
+
 #content img{
 	max-width: 100%;
 }
@@ -171,6 +169,10 @@ hr{
 	#blog_img{
 	margin-top: 50px;
 	}
+
+	#content p{
+	font-size: 1.1rem;
+	}
 }
 
 
@@ -191,8 +193,13 @@ hr{
 		font-size: 1em;
 		line-height: 2.5em;
 	}
+	
 	#blog_img{
 	margin-top: 50px;
+	}
+
+	#content p{
+	font-size: 1.25rem;
 	}
 
 }
@@ -220,6 +227,10 @@ hr{
 	margin-top: 50px;
 	}
 
+	#content p{
+	font-size: 1.25rem;
+	}
+
 
 }
 
@@ -243,6 +254,10 @@ hr{
 
 	#blog_img{
 	margin-top: 0px;
+	}
+
+	#content p{
+	font-size: 1rem;
 	}
 
 }

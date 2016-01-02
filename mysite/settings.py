@@ -25,9 +25,9 @@ TEMPLATES_DIRS=(
 SECRET_KEY = '&1&-t%7=y@yn&7f33-4s)ok#qa%qmckxe!rwv57cqou0x2)+xj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False  
+DEBUG = True 
 
-COMPRESS_ENABLED= True
+COMPRESS_ENABLED= False
 ALLOWED_HOSTS = ['hill1895.rocks',
                  'www.hill1895.rocks',
                  'localhost']

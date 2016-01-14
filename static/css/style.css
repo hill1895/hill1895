@@ -342,6 +342,10 @@ a:active{
 	    padding-left: 10px;
 	}
 
+	.col-md-offset-1{
+		margin-left: 8.33333%;
+	}
+
 }
 
 @media (min-width: 1200px) {
@@ -349,7 +353,9 @@ a:active{
 		width: 350px;
 		right: 25rem;
 	}
-
+	.col-md-offset-1{
+		margin-left:0;
+	}
 }
 
 @-moz-document 

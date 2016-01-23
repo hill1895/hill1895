@@ -327,7 +327,7 @@ a:active{
 
 	#search{
 	    width: 45px;
-	    right: 22rem;
+	    right: 25rem;
 	    padding-top: 5px;
 	    padding-left: 10px;
 	}
@@ -337,7 +337,7 @@ a:active{
 @media (min-width: 980px) and (max-width:1199px ) {
 	#search{
 	    width: 45px;
-	    right: 22rem;
+	    right: 25rem;
 	    padding-top: 5px;
 	    padding-left: 10px;
 	}
@@ -351,7 +351,7 @@ a:active{
 @media (min-width: 1200px) {
 	#search{
 		width: 350px;
-		right: 25rem;
+		right: 28rem;
 	}
 	.col-md-offset-1{
 		margin-left:0;

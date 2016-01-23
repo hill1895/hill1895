@@ -27,6 +27,7 @@ from django.contrib.sitemaps import views
 from hill1895.sitemap import sitemaps
 from hill1895.models import Blog,Tag
 from hill1895 import views
+from hill1895.LatestEntriesFeed import LatestEntriesFeed
 
 
 urlpatterns=patterns('hill1895.views',
@@ -43,6 +44,7 @@ urlpatterns=patterns('hill1895.views',
     url(r'^robots\.txt$',TemplateView.as_view(template_name= 'robots.txt', content_type='text/plain')),
     url(r'^sitemap\.xml$',index,{'sitemaps': sitemaps}),
     url(r'^sitemap-(?P<section>.+)\.xml$', sitemap, {'sitemaps': sitemaps}),
+    url(r'^feed/$', LatestEntriesFeed()),
 )
     
 

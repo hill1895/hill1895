@@ -44,7 +44,7 @@ urlpatterns=patterns('hill1895.views',
     url(r'^robots\.txt$',TemplateView.as_view(template_name= 'robots.txt', content_type='text/plain')),
     url(r'^sitemap\.xml$',index,{'sitemaps': sitemaps}),
     url(r'^sitemap-(?P<section>.+)\.xml$', sitemap, {'sitemaps': sitemaps}),
-    url(r'^feed/main\.xml$','feed', LatestEntriesFeed()),
+    url(r'^feed/main\.xml$', LatestEntriesFeed()),
 )
     
 

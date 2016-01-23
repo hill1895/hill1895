@@ -19,4 +19,4 @@ class LatestEntriesFeed(Feed):
         return item.content
 
     def item_link(self, item):
-        return "hill1895.rocks/blog_detail/blog_"+str(item.id)
+        return "/blog_detail/blog_"+str(item.id)

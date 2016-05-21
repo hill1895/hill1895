@@ -1,0 +1,32 @@
+
+
+{% for blog_info in SRE_infos %}
+	
+{% include "list_style.html" %}
+{% empty %}
+		<h3>这个人好懒，一个字都没写</h3>
+
+{% endfor %}
+
+	<ul class="pagination">
+
+		{% if SRE_infos.has_previous %}
+			<li><a href="?page={{ SRE_infos.previous_page_number }}">&laquo;</a></li>
+		{% else %}
+			<li class="active"><a>&laquo;</a></li>
+		{% endif %}
+
+		{% for p in SRE_page_range %}
+	      {% ifequal p SRE_infos.number %}
+	     	 <li class="active"><a>{{p}}</a></li>
+	      {% else %}
+	      	<li><a href="?page={{p}}" title="第{{p}}页">{{p}}</a><li>
+	      {% endifequal %}
+	    {% endfor %}
+
+		{% if SRE_infos.has_next %}
+	    	<li><a href="?page={{ SRE_infos.next_page_number }}">&raquo;</a></li>
+	    {% else %}
+	    	<li class="active"> <a>&raquo;</a></li>
+	    {% endif %}
+	</ul>

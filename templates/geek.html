@@ -34,17 +34,17 @@
          所有文章
       </a>
    </li>
-   <li><a href="#C_Cpp" data-toggle="tab">
-        C++/Java
-      </a>
-   </li>
-      <li><a href="#Python" data-toggle="tab">
-        Python
+   <li><a href="#Develop" data-toggle="tab">
+        开发
       </a>
    </li>
       </li>
     <li><a href="#Website" data-toggle="tab">
         Web
+      </a>
+   </li>
+   <li><a href="#SRE" data-toggle="tab">
+        运维
       </a>
    </li>
 
@@ -56,19 +56,17 @@
 	{% include "geek/home.html" %}
 	</div>
 
-	<div class="tab-pane fade in" id="C_Cpp">
-
-	{% include "geek/cpp.html" %}
-
-	</div>
-
-	<div class="tab-pane fade in" id="Python">
-	{% include "geek/python.html" %}
+	<div class="tab-pane fade in" id="Develop">
+	{% include "geek/develop.html" %}
 	</div>
 
 	<div class="tab-pane fade in" id="Website">
 	{% include "geek/website.html" %}
 	</div>
+
+  <div class="tab-pane fade in" id="SRE">
+  {% include "geek/SRE.html" %}
+  </div>
 
 </div>
 

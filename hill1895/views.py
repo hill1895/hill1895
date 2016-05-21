@@ -17,9 +17,9 @@ __category1={
 			'Joke':'瞎扯'
 			}
 __category2={
-			'C++/Java':'C++/Java',
-			'Python':'Python',
+			'Develop':'开发',
 			'Website':'Web',
+			'SRE':'运维',
 			'Book':'读书',
 			'Movie':'影评',
 			'Sports':'运动',
@@ -160,19 +160,19 @@ def geek(request):
 	
 	geek_latest,geek_infos,geek_page_range=__get_blog_list(request,blogs_geek)
 	
-	cpp_infos,cpp_page_range=__blog_by_category2(request,blogs_geek,'C++/Java')
-	python_infos,python_page_range=__blog_by_category2(request,blogs_geek,'python')
+	develop_infos,develop_page_range=__blog_by_category2(request,blogs_geek,'Develop')
 	website_infos,website_page_range=__blog_by_category2(request,blogs_geek,'website')
+	SRE_infos,SRE_page_range=__blog_by_category2(request,blogs_geek,'SRE')
 
 	friends=Friend.objects.all()
 	content={'geek_infos':geek_infos,
 			 'geek_page_range':geek_page_range,
-			 'cpp_infos':cpp_infos,
-			 'cpp_page_range':cpp_page_range,
-			 'python_infos':python_infos,
-			 'python_page_range':python_page_range,
+			 'develop_infos':develop_infos,
+			 'develop_page_range':develop_page_range,
 			 'website_infos':website_infos,
 			 'website_page_range':website_page_range,
+			 'SRE_infos':SRE_infos,
+			 'SRE_page_range':SRE_page_range,
 			 'geek_latest':geek_latest,
 			 'tags':tags,
 			 'friends':friends}

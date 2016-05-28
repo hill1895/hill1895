@@ -19,6 +19,7 @@
    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
    <link rel="stylesheet" type="text/css" href="/static/css/detail.css">
+   <link rel="stylesheet" type="text/css" href="/static/css/ueditor/shCore.css">
    <link rel="stylesheet" type="text/css" href="/static/css/ueditor/shCoreRDark.css">
   {% endcompress %}
 
@@ -107,13 +108,22 @@
 	<script src="/static/js/jquery-1.11.3.min.js"></script>
 	<script src="/static/js/bootstrap/bootstrap.min.js"></script>
    <script src="/static/js/ueditor/shCore.js"></script>
+   <script src="/static/js/ueditor/shBrushJScript.js"></script>
+   <script type="text/javascript" src="/static/js/ueditor/shAutoloader.js"></script>
    <script src="/static/js/main.js"></script>
   {% endcompress%}
    <script type="text/javascript">
+    SyntaxHighlighter.autoloader(
+            ['js','jscript','javascript','/static/js/ueditor/shBrushJScript.js'],
+            ['bash','shell','/static/js/ueditor/shBrushBash.js'],
+            ['css','/static/js/ueditor/shBrushCss.js'],
+            ['xml','html','/static/js/ueditor/shBrushXml.js'],
+            ['sql','/static/js/ueditor/shBrushSql.js'],
+            ['php','/static/js/ueditor/shBrushPhp.js']
+        ); 
       SyntaxHighlighter.defaults['pad-line-numbers']=true
       SyntaxHighlighter.defaults['smart-tabs']=true
-      SyntaxHighlighter.defaults['gutter']=true
-      SyntaxHighlighter.defaults['title']="代码片段:"
+      SyntaxHighlighter.defaults['gutter']=false
       SyntaxHighlighter.all();
    </script>
 

@@ -1,4 +1,4 @@
-Django Blog of Hill1895--刘文图熙1895的博客
+Django Blog of Hill1895--刘文图熙1895的博客-Nice
 ===================
 该网站为个人的博客网站，用于记录个人的一些技术学习心得及其他东西，网站地址为[hill1895.rocks](http://hill1895.rocks)。
 ###网站架构
